@@ -1,0 +1,226 @@
+├─L001-zabbix深度实践
+│      01-架构师开课动员
+│      02-学习环境统一提升学习效率
+│      03-高级架构师培训体系说明
+│      04-网络监控
+│      05-系统监控
+│      06-应用监控
+│      07-引入zabbix
+│      08-zabbix简介
+│      09-zabbix自定义监控和图表
+│      10-流量分析
+│      11-zabbix自定义报警-动作
+│      12-zabbix自定义模板
+│      13-监控可视化
+│          
+├─L002-zabbix深度实践
+│      1-Zabbix分布式监控
+│      2-Zabbox自动化监控
+│      
+├─L003-SaltStack深度实践
+│      1-SaltStack快速入门
+│      2-数据系统-Grains
+│      3-数据系统-Pillar
+│      4-远程执行详解
+│      
+├─L004-Saltstack配置管理
+│      1-Saltstack配置管理-小试
+│      2-SaltStack配置管理-YAML和Jinja
+│      3-SaltStack配置管理-系统初始化
+│      4-Saltstack配置管理-功能模块-haproxy
+│      5-Saltstack配置管理-业务引用haproxy
+│      6-Saltstack配置管理-keepalived
+│      7-SaltStack配置管理-业务引用keepalived
+│      8-Saltstack配置管理-增加Zabbix
+│      9-SaltStack架构扩展
+│      10-SaltStack-Syndic再讲
+│      11-SaltStack-二次开发
+│     
+├─L005-基于saltstack的自动化扩容
+│      1-自动化运维-自动化运维发展历程
+│      2-自动化运维-自动化扩容介绍加etcd部署
+│      3-自动化运维-基于etcd加saltstack的自动化扩容
+│      4-自动化运维-使用Shell脚本简单实现
+│      
+├─L006-自动化安装与自动化部署
+│      01-自动化安装-1-pxe-kickstart
+│      01-自动化安装-2-cobbler部署
+│      01-自动化安装-3-自动化定制安装
+│      02-自动化部署-1-自动化部署流程设计
+│      02-自动化部署-2-自动化部署-流程实现
+│      02-自动化部署-3-自动化部署后记
+│          
+├─L007-云计算概述与KVM虚拟化企业级实战
+│      1.云计算概述
+│      2.云计算与虚拟化
+│      3.KVM环境准备
+│      4.KVM虚拟机创建
+│      5.KVM常用管理
+│      6.KVM性能优化
+│      7.ovirt和总结
+│      
+├─L008-openstack云计算实战精讲(上)
+│      1-OpenStack介绍
+│      2-Openstack基础环境
+│      3-Keystone（上）
+│      4-Keystone（下）
+│      5-Glance部署
+│      6-Nova控制节点
+│      7-Nova计算节点
+│      8-Neutron部署
+│      9-创建第一台虚拟机
+│      
+├─L009-openstack云计算实战精讲(下)
+│      0-安全分享
+│      1-neutron回顾
+│      2-虚拟机知多少
+│      3-dashboard
+│      4-虚拟机创建流程
+│      5-cinder
+│      6-cinder云硬盘创建
+│      7-扩展
+│      8-lbaas
+│      
+├─L010-云计算Docker生产实践
+│      0-课前分享
+│      1-OpenStack回顾
+│      2-Docker介绍
+│      3-Docker镜像和容器
+│      4-docker网络和存储
+│      5-docker-手动构建镜像
+│      6-docker-Dockerfile构建镜像
+│      7-docker-Registry私有仓库构建
+│      8-docker扩展
+│      
+├─L011-架构师日志平台ELKStack实践
+│      01-elk简介、ES安装
+│      02-es集群
+│      03-无记录
+│      04-无记录
+│      05-无记录
+│      06-无记录
+│      07-无记录
+│      08-无记录
+│      09-无记录
+│      10-logstash收集slowlog-grok
+│      11-logstash解耦之消息队列
+│      12-kibana实践
+│      13-elk上线流程
+│          
+├─L012-上学期结课总结及堡垒机-WAF实践
+│      1-堡垒机介绍之Gateone
+│      2-Gateone使用和嵌入
+│      3-云计算与自动化运维整体回顾
+│      4-Openstack回顾
+│      5-Salt-cloud创建Openstack虚拟机
+│      6-WAF介绍
+│      7-WAF实现
+│      
+├─L013-2016最新亿级PV大型电商网站架构综合详解
+│      1-架构概述1
+│      2-架构概述2
+│      3-架构概述3-引入缓存
+│      4-架构概述4-总结
+│      5-架构概述5-分布式部署
+│      6-架构概述6-总结
+│      
+├─L014-架构师DNS实战
+│      1-未命名
+│      2-未命名
+│      3-未命名
+│      4-未命名
+│      5-未命名
+│      6-未命名
+│      7-未命名
+│      8-未命名
+│      
+├─L015-架构师反向代理
+│      1-架构概述
+│      2-架构漫谈
+│      3-Apache反向代理
+│      4-Nginx反向代理
+│      5-haproxy反向代理
+│      6-haproxy-L7设置
+│      7-haproxy动态管理
+│      
+├─L016-keepalive nginx及面试题 压力测试
+│      1-keepalived
+│      2-nginx-tcp
+│      3-apache和nginx常用面试题
+│      4-压力测试
+│      
+├─L017-tomcat java应用服务实践
+│      1-TCP上
+│      2-TCP下
+│      3-Time_wait真的可怕吗
+│      4-Time_wait优化
+│      5-Tomcat管理
+│      6-Tomcat监控和优化
+│      
+├─L018-JAVA应用JVM原理及参数调优深入讲解
+│      01-未命名
+│      02-未命名
+│      03-未命名
+│      04-未命名
+│      05-未命名
+│      06-未命名
+│      07-未命名
+│      08-未命名
+│      09-未命名
+│      10-未命名
+│      11-未命名
+│      
+├─L019-反向代理缓存
+│      1-buffer-cache
+│      2-浏览器dns
+│      3-浏览器缓存
+│      4-cdn
+│      5-未命名-1
+│      6-nginx反向代理
+│      7-未命名-2
+│      
+├─L020-架构面试
+│      1-未命名
+│      2-未命名
+│      
+├─L021-缓存知识体系
+│      1.Web服务器缓存
+│      2.应用程序缓存
+│      3-memcached和redis对比
+│      4.redis部署
+│      5-redis基础数据类型
+│      6-redis持久化和主从
+│      7-redis集群
+│      8-codis1
+│      9-codis2
+│      
+├─L022-分布式存储-fastdfs-glusterfs-ITIL
+│      0-redis主从
+│      1-块存储
+│      2-文件存储
+│      3-对象存储
+│      4-gluterfs
+│      5-glusterfs
+│      6-fastdfs1
+│      7-fastdfs2
+│      8-ITIL管理讲解
+│      
+├─L023-架构回顾
+│      01-tmpfs
+│      02-英语分享
+│      03-LevelDB
+│      04-SSDB
+│      05-时间序列库
+│      06-架构回顾图
+│      07-openstack回顾图
+│      08-自动化扩容回顾图
+│      09-数据分析平台回顾图
+│      10-电商架构回顾图
+│      
+├─L024-MySQL数据库架构扩展
+│      1-mysql备份
+│      2-mysql监控
+│      3-mysql高可用性
+│      4-mysql扩展-复制扩展方案
+│      5-mysql扩展-中间件
+└─
