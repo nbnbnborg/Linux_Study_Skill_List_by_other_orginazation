@@ -1,0 +1,271 @@
+├─L001-运维与自动化运维发展
+│      01-运维职业发展
+│      02-运维知识系统和分类
+│      03-运维自动化发展-标准化
+│      04-运维自动化发展-工具化
+│      05-运维自动化发展-Web化
+│      06-运维自动化发展-服务化
+│      07-运维自动化发展-智能化
+│      08-ITIL简介
+│      09-ITIL服务运营-服务台
+│      10-ITIL故障管理和问题管理
+│      
+├─L002-自动化运维之自动化安装实践
+│      01-课前分享pxe-kickstart1
+│      02-课前分享pxe-kickstart2
+│      03-cobbler部署并自动化安装系统
+│      04-自动重装和cobbler-web
+│      05-cobbler自定义yum源
+│      06-cobbler自定义系统安装
+│      07-使用api自定义安装
+│      08-markdown语法简介
+│      09-操作系统安装规范编写
+│      10-作业
+│      
+├─L003-多维监控体系
+│      01-监控概述
+│      02-硬件监控1
+│      03-硬件监控2
+│      04-ipmi展示
+│      05-系统监控-概述
+│      06-CPU监控
+│      07-内存监控
+│      08-系统监控
+│      09-应用监控
+│      10-zabbix安装1
+│      11-zabbix安装2
+│      12-zabbix概述
+│      13-zabbix自定义监控项
+│      14-zabbix自定义图形、screen、map
+│      15-课程总结和作业
+│      
+├─L004-zabbix监控实战
+│      01-zabbix基础讲解1
+│      02-zabbix基础讲解2
+│      03-告警添加流程
+│      04-nginx监控jvm
+│      05-nginx监控nginx
+│      06-nginx监控tcp和触发器添加
+│      07-zabbix告警通知
+│      08-zabbix监控mysql.mkv
+│      09-zabbix-web监控
+│      10-zabbix监控模式
+│      11-zabbix分布式监控
+│      12-zabbix自动化监控
+│      13-自动化运维api体系
+│          
+├─L005-Saltstack自动化运维
+│      1-saltstack简介
+│      2-saltstack快速入门-远程执行
+│      3-saltstack快速入门-配置管理
+│      4-saltstack数据系统-grains
+│      5-saltstack数据系统-pillar
+│      6-saltstack远程执行-指定目标
+│      7-saltstack远程执行-执行模块
+│      8-saltstack远程执行-返回程序
+│      9-saltstack远程执行-编写执行模块
+│          
+├─L006-DNS实战
+│      1-理论基础
+│      2-安装部署01
+│      3-安装部署02
+│      4-安装部署03
+│      5-安装部署04
+│      6-构建企业dns
+│      7-dns拓展
+│          
+├─L007-Saltstack实战(1)
+│      1-配置管理之sls
+│      2-配置管理之状态模块pkg、file
+│      3-配置管理之状态模块service
+│      4-状态间关系
+│      5-配置管理之jinja模板
+│      6-配置管理小结和技巧
+│      7-saltstack项目实战-系统初始化
+│      8-saltstack项目实战-haprox
+│      9-saltstack项目实战-业务引用
+│      
+├─L008-Saltstack实战(2)
+│      1-saltstack实战案例-keepalived-memcached
+│      2-saltstack实战案例-nginx-php-bbs
+│      3-saltstack实战案例-debug和总结
+│      4-saltstack实战案例-job管理和runner
+│      5-saltstack实战案例-无master和多master
+│      6-saltstack-syndic
+│      7-saltstack-ssh
+│      8-saltstack-api-1
+│      
+├─L009-GlusterFS实战
+│      1-无命名
+│      2-无命名
+│      3-无命名
+│      4-无命名
+│      5-无命名
+│      6-无命名
+│      7-无命名
+│      
+├─L010-持续集成与自动化部署1
+│      1-自动化部署概述
+│      2-自动化部署
+│      3-自动化部署流程设计
+│      4-自动化部署实战-shell函数
+│      5-自动化部署实战-功能实现
+│      6-自动化部署实战-脚本扩展
+│      7-自动化部署实战-秒级回滚
+│      8-自动化部署实战-gitlab和部署和回滚
+│      
+├─L011-持续集成与自动化部署2
+│      1-devops介绍
+│      2-持续集成、交付、部署介绍
+│      3-jenkins插件安装
+│      4-jenkins创建job和git插件
+│      5-代码质量管理-sonar部署
+│      6-代码质量管理-sonar代码分析
+│      7-jenkins实战sonar与jenkins结合
+│      8-jenkins实战-job关联和pipeline
+│      9-jenkins实战-jenkins与gitlab集成（webhook)
+│      
+├─L012-ELKStack
+│      1-elkstack-es简介
+│      2-elkstack-es集群
+│      3-elkstack-logstash实战
+│      4-elkstack-logstack-input-file
+│      5-elkstack-kibana简单使用
+│      6-elkstack-logstash-input-if判断
+│      7-elkstack-logstash-codec-multiline
+│      8-elkstack-logstash-codec-json
+│          
+├─L013-ELKStack深入完结
+│      01-elkstack-kibana图形化
+│      02-elkstack-logstash实战-input插件syslog
+│      03-elkstash-logstash实战-input插件tcp
+│      04-elkstack-logstash-filter插件grok
+│      05-elkstack-收集apache日志
+│      06-elkstack-使用消息队列扩展1
+│      07-elkstack-使用消息队列扩展2
+│      08-elkstack-生产案例项目分析
+│      09-elkstack-生产案例项目实战
+│      10-自动化运维结课
+│      
+├─L014-云计算初步与KVM虚拟化实践
+│      1.云计算概述
+│      2.云计算分层
+│      3.虚拟化介绍
+│      4.kvm介绍
+│      5.创建kvm虚拟机
+│      6.virt管理kvm虚拟机
+│      7.cpu和内存动态扩容
+│      8.kvm磁盘和网络管理
+│      9.kvm优化
+│      
+├─L015-docker
+│      01.docker简介和kvm区别
+│      02.引入docker
+│      03.docker快速入门
+│      04.docker改变了什么
+│      05.docker网络访问
+│      06.docker数据管理
+│      07.docker镜像构建和dockerfile
+│      08.dockerfile生产实践
+│      09.docker registry实践（作业）
+│      10.docker registry实践（作业）(2)
+│          
+├─L016-Cloudstack云平台实战(1)
+│      01-无命名
+│      02-无命名
+│      03-无命名
+│      04-无命名
+│      05-无命名
+│      06-无命名
+│      07-无命名
+│      08-无命名
+│      09-无命名
+│      10-无命名
+│      11-无命名
+│      12-无命名
+│      13-无命名
+│          
+├─L017-Cloudstack云平台实战(2)
+│      01-无命名
+│      02-无命名
+│      03-无命名
+│      04-无命名
+│      05-无命名
+│      06-无命名
+│      07-无命名
+│      08-无命名
+│      09-无命名
+│      10-无命名
+│      
+├─L018-OpenStack实战开发(1)
+│      01-openstack介绍
+│      02-基础服务
+│      03-keystone部署用户管理
+│      04-keystone部署服务注册
+│      05-glance服务部署
+│      06-nova控制节点
+│      07-nova计算节点1
+│      08-nova计算节点2
+│      09-neutron控制节点1
+│      10-neutron控制节点2
+│      
+├─L019-OpenStack实战开发(2)
+│      1-neutron计算节点配置
+│      2-pythons15day4作业讲解
+│      3-创建第一台虚拟机
+│      4-部署dashboard
+│      5-horizon创建云主机
+│      6-深入了解OpenStack
+│      7-总结
+│          
+├─L020-OpenStack实战开发(3)
+│      1-cinder控制节点
+│      2-cinder控制节点2
+│      3-cinder计算节点-准备
+│      4-cinder云硬盘创建
+│      5-cinder不同存储类型
+│      6-neutron实现阿里云ECS网络
+│      7-neutron实现阿里云VPC网络
+│      8-neutron实现阿里云VPC网络2
+│      
+├─L021-单机时代
+│      1-单机时代-单机模式
+│      2-单机时代-动静分离
+│      3-单机时代-数据库分离
+│      4-单机时代-组件分离
+│      5-TCP三次握手和四次挥手
+│      6-TCP状态转换
+│      7-time_wait调优
+│      8-apache和nginx简述
+│      9-架构畅谈
+│      
+├─L022-集群实战开发
+│      1-集群和四层负载均衡
+│      2-四层和七层负载均衡区别
+│      3-灾备基础1
+│      4-灾备六个等级
+│      5-按SET部署
+│      6-haproxy快速入门
+│      7-x_forward_for如何取
+│      8-haproxy在线更改
+│      9-haproxy-keepalvied
+│      
+├─L023-Redis深入讲解
+│      1-缓存知识体系
+│      2-用户层缓存
+│      3-CDN缓存
+│      4-应用层缓存
+│      5-Redis简介
+│      6-Redis持久化
+│      7-redis主从复制
+│      8-redis集群
+│      
+├─L024-数据存储
+│      1-数据存储概览
+│      2-mysql复制和相关经验分享
+│      3-mysql复制解决方案
+│      4-mysql-DAL-客户端分片
+│      5-mysql-dal-cobar-mycat
+│      6-mysql-pt
+│           
+└─
