@@ -5,11 +5,11 @@
 │      04-KVM介绍
 │      05-KVM安装
 │      06-KVM虚拟机介绍
-│      07.KVM管理
-│      08.KVM性能优化
-│      09.KVM的IO缓存介绍
-│      10.虚拟机创建和作业
-│      11.OpenStack历史
+│      07-KVM管理
+│      08-KVM性能优化
+│      09-KVM的IO缓存介绍
+│      10-虚拟机创建和作业
+│      11-OpenStack历史
 │      12-OpenStack相关技术介绍
 │      13-OpenStack环境准备
 │      14-总结
