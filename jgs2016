@@ -1,0 +1,388 @@
+├─01(半天)-上课环境介绍、Vmware使用、操作系统及Linux基础知识
+│      1.开课介绍及vmware的使用入门
+│      2.OS及Linux基础知识
+│      
+├─02-OS Linux发行版介绍、Linux系统基础使用入门、Linux命令帮助、Linux基础命令
+│      1.OS Linux发行版
+│      2.Linux系统基础使用入门
+│      3.Linux命令帮助的获取详解
+│      4.Linux基础命令
+│      
+├─03-Linux的文件系统、系统管理类命令、bash基础特性
+│      1.linux文件系统及文件类型
+│      2.bash基础特性及基础命令
+│      
+├─04-文件管理、管道、用户及组管理、用户及权限管理
+│      1.文件管理、命令别名和glob
+│      2.IO重定向、管道及文本处理工具
+│      3.用户及组管理
+│      4.用户及权限管理
+│      
+├─05-shell编程初步、grep及正则表达式
+│      1.shell编程初步
+│      2.grep及正则表达式
+│      
+├─06-egrep、bash环境配置及脚本、vim编辑器
+│      1.egrep及bash中的变量
+│      2.bash环境配置及脚本
+│      3.vim编辑器
+│      4.vim编辑器和bash条件测试
+│      
+├─07-find命令、if语句、磁盘管理、文件系统管理
+│      1.find命令详解
+│      2.特殊权限及if语句
+│      3.Linux磁盘管理
+│      4.linux文件系统管理
+│      
+├─08-文件系统挂载、ext文件系统及read命令、Linux RAID、lvm应用
+│      1.文件系统挂载与管理工具
+│      2.ext文件系统原理基础及read命令
+│      3.Linux RAID
+│      4.lvm应用
+│      
+├─09-btrfs文件系统、压缩工具及for语句、程序包管理
+│      1.btrfs文件系统管理与应用
+│      2.压缩工具及for语句
+│      3.程序包管理
+│      4.程序包管理
+│      
+├─10-程序包管理
+│      1.程序包管理
+│      2.程序包管理
+│      
+├─11-网络基础知识、ifcfg系列命令及网络属性、ip命令及配置文件配置属性、centos网络属性配置
+│      1.网络基础知识
+│      2.1.使用ifcfg系列命令配置网络属性
+│      2.2.使用ifcfg系列命令配置网络属性
+│      3.ip命令及配置文件方式配置网络属性
+│      4.centos网络属性配置
+│      
+├─12-Linux系统基础原理、进程管理工具、任务计划
+│      1.Linux系统基础原理
+│      2.Linux进程管理工具
+│      3.Linux进程管理工具
+│      4.Linux任务计划
+│      
+├─13-CentOS系统启动路程、grub legacy、Linux内核管理初步
+│      1.CentOS系统启动流程
+│      2.CentOS系统启动流程
+│      3.grub_legacy
+│      4.Linux内核管理初步
+│      
+├─14-内核编译及CentOS系统安装、SELinux、while循环
+│      1.内核编译及CentOS系统安装
+│      2.CentOS系统安装
+│      3.SELinux简介
+│      4.while循环
+│      
+├─15-sed命令、until、while、for循环及case
+│      1.sed命令入门及进阶
+│      2.until、while、for循环及case
+│      
+├─16-bash编程之函数数组和字符串处理、CentOS7之systemd
+│      1.bash编程之函数
+│      2.CentOS 7之systemd
+│      3.bash编程之数组和字符串处理
+│      
+├─17-gawk基础入门进阶、网络通信安全基础、openssl命令行工具
+│      1.gawk基础入门
+│      2.gawk进阶
+│      3.网络通信安全基础
+│      4.openssl命令行工具
+│      
+├─18-dns服务基础进阶、bind9安装配置、bind9反向区域及主从同步
+│      1.dns服务基础
+│      2.dns服务基础及进阶
+│      3.bind9安装配置
+│      4.bind9反向区域及主从同步
+│      
+├─19天(半天)-bind高级应用
+│      1.bind的高级应用
+│      2.bind的高级应用
+│      
+├─20-telnet和openssh、openssh和openssl、套按字及http基础知识、http协议及httpd基础
+│      1.telnet和openssh
+│      2.openssh和openssl
+│      3.套按字及http基础知识
+│      4.http协议及httpd基础
+│      
+├─21-httpd-2.2基础配置、http协议进阶
+│      1.httpd-2.2基础配置
+│      2.httpd-2.2基础配置
+│      3.http协议进阶
+│      4.httpd-2.2基础配置
+│      
+├─22-httpd-2.4使用及lamp基础、php简介、MySQL使用基础及基础应用
+│      1.httpd-2.4基本使用及lamp基础
+│      2.lamp及php程序简介
+│      3.php及mysql使用基础
+│      4.mysql基础应用
+│      
+├─23-MariaDB SQL语句、编译安装lamp、sudo简单使用、vsftpd
+│      1.MariaDB SQL语句基础
+│      2.编译安装lamp
+│      3.sudo的简单使用
+│      4.vsftpd
+│      5.vsftpd基于虚拟用户认证机制
+│      
+├─24-ftp协议及vsftpd服务基本应用、vsftpd高级应用、rpc概念及nfs基本应用、samba
+│      1.ftp协议及vsftpd服务的基本应用
+│      2.vsftpd的高级应用
+│      3.rpc概念及nfs的基本应用
+│      4.samba及其基本应用
+│      
+├─25-mini Linux制作、rsyslog及loganalyzer、nsswitch&pam
+│      1.mini Linux制作过程
+│      2.mini Linux制作过程
+│      3.rsyslog及loganalyzer
+│      4.nsswitch & pam
+│      
+├─26-iptables基础、基本应用、扩展及其使用、扩展匹配及网络防火墙功能
+│      1.iptables-netfilter基础
+│      2.iptables基本应用
+│      3.iptables扩展及期使用
+│      4.iptables扩展匹配及网络防火墙功能
+│      
+├─27-iptables之nat、tcp_wrapper、http协议、IO网络模型&nginx简介
+│      1.iptables之nat
+│      2.tcp_wrapper
+│      3.1.http协议
+│      3.2.iptables layer7
+│      4.IO网络模型&nginx简介
+│      
+├─28天(补充视频)【nginx安装和配置详解、nginx-write-proxy
+│      1.nginx安装和配置
+│      2.nginx
+│      nginx-write-proxy
+│      nginx配置讲解
+│      
+├─28-http协议基础及IO模型、nginx特性及基础概念、nginx web服务配置详解
+│      1.http协议基础及IO模型
+│      2.nginx特性及基础概念
+│      3.nginx_web服务配置详解
+│      4.nginx_web服务配置详解
+│      
+├─29-Linux集群系统基础、LVS集群基础、lvs类型和调度方法详解、lvs nat和dr类型演示
+│      1.Linux集群系统基础
+│      2.LVS集群基础
+│      3.lvs类型和调度方法详解
+│      4.lvs_nat和dr类型演示
+│      
+├─30天(半天)【lvs使用进阶
+│      1.lvs使用进阶
+│      2.lvs使用进阶
+│      
+├─31-web站点架构模式简介及Nginx、nginx反向代理及缓存功能、nginx的upstream及fastcgi模块应用、nginx和tengine简介
+│      1.web站点架构模式简介及Nginx
+│      2.nginx的反向代理及缓存功能
+│      3.nginx的upstream及fastcgi模块应用
+│      4.nginx和tengine简介
+│      
+├─32-keepalived
+│      1.keepalived
+│      2.keepalived
+│      3.keepalived
+│      4.keepalived
+│      
+├─33-ansible、dhcp、tftp及pxe
+│      1.dhcp、tftp及pxe
+│      2.1.ansible入门
+│      2.2.ansible补充
+│      2.3.ansible补充
+│      3.1.ansilbe常用模块详解
+│      3.2.ansilbe常用模块详解
+│      4.ansible_playbook
+│      
+├─34-corosync基础原理、集群初步、集群配置
+│      1.HA_Cluster基础原理详解
+│      2.corosync集群初步
+│      3.corosync集群配置精讲
+│      4.corosync集群配置
+│      
+├─34-web系统架构及cache基础、varnish4基础应用、varnish状态引擎详解及vcl
+│      1.web系统架构及cache基础
+│      2.varnish4基础应用
+│      3.varnish状态引擎详解
+│      4.varnish状态引擎及vcl
+│      
+├─34-补充(HA Cluster for CentOS6)
+│  补充(第1天)【HA Cluster、heatbeat实现HA、ipvs、mysql集群
+│      1.HACluster基础概念
+│      2.HACluster基础及heartbeat实现HA
+│      3.HACluster概念扩展及heartbeat实现)
+│      4.1.实现高可用mysql集群
+│      4.2.实现高可用mysql集群
+│      5.heartbeat高可用ipvs
+│       
+│  补充(第2天)【HA Cluster与Corosync、pacemaker、drbd
+│      1.HACluster及Corosync
+│      2.使用crmsh配置pacemaker
+│      3.drbd基础及应用实现
+│      4.用drbd实现HA的MySQL
+│      5.corosync、pacemaker集群及pcs
+│       
+│  补充(第3天)【SCSI和iSCSI协议、Linux上IP SAN实现、rhcs集群、gfs2和clvm
+│      1.SCSI和iSCSI协议
+│      2.Linux系统上IP SAN的实现
+│      3.rhcs集群基础应用
+│      4.rhcs之gfs2和clvm
+│          
+├─35-web站点架构、代理服务器及haproxy基础、haproxy配置参数及详解
+│      1.web站点架构扩展思路
+│      2.1.代理服务器及haproxy基础
+│      2.2.代理服务器及haproxy基础
+│      3.haproxy配置参数详解
+│      4.haproxy配置详解
+│      
+├─36-web系统架构及cache基础、varnish4基础应用、varnish状态引擎详解及vcl
+│      1.web系统架构及cache基础 (1)
+│      2.varnish4基础应用 (1)
+│      3.varnish状态引擎详解 (1)
+│      4.varnish状态引擎及vcl (1)
+│      
+├─37-java技术体系基础、tomcat核心概念及使用初步、tomcat配置与应用
+│      1.java技术体系基础
+│      2.tomcat核心概念及使用初步
+│      3.tomcat配置与应用
+│      4.tomcat配置与应用
+│      
+├─38-tomcat lb cluster、memcached和msm、msm及jvm虚拟机性能监控、tcpdump和nc工具的使用
+│      1.tomcat_lb_cluster
+│      2.tomcat_lb_cluster
+│      3.memcached和msm
+│      4.msm(CentOS 6)及jvm虚拟机性能监控
+│      5.tcpdump和nc工具的使用
+│      
+├─39-MySQL基础、MySQL机构及SQL语句、MySQL操作查询
+│      1.mysql基础
+│      2.mysql基础
+│      3.MySQL架构及SQL语句
+│      4.MySQL查询操作
+│      
+├─40-用户权限管理及查询缓存、索引和explain、MariaDB存储引擎及编译安装、MySQL中的事务
+│      1.用户、权限管理及查询缓存
+│      2.索引和explain
+│      3.MariaDB存储引擎及编译安装
+│      4.MySQL中的事务
+│      
+├─41（半天）-mariadb日志文件、备份和恢复基础
+│      1.mariadb日志文件
+│      2.备份和恢复基础
+│      
+├─42-mysql备份与恢复、mysql主从复制架构及实现
+│      1.mysql备份与恢复
+│      2.mysql备份与恢复
+│      3.mysql主从复制架构及实现
+│      4.mysql主从复制架构及实现
+│      
+├─43-MySQL复制及Galera Cluster、MHA、大型网站架构、分布式系统理论
+│      1.MySQL复制及MHA
+│      2.MySQL复制及Galera Cluste
+│      3.分布式系统理论基础及大型网络架构演化
+│      4.大型网站架构演化及分布式系统理论基础
+│      
+├─44（半天）-分布式存储与mogilefs、mogiles使用进阶
+│      1.分布式存储与mogilefs
+│      2.mogiles使用进阶
+│      
+├─45-puppet基础、资源详解、配置语言、puppet类与模板及模块
+│      1.puppet基础
+│      2.puppet资源详解
+│      3.puppet配置语言
+│      4.puppet类、模板及模块
+│      
+├─46-puppet master-agent模型、运维工具介绍及pxe环境的实现、cobbler简单实现、CentOS7 cobbler
+│      1.puppet master-agent模型
+│      2.puppet master-agent模型
+│      3.运维工具介绍及pxe环境的实现
+│      4.cobbler简单实现
+│      5.CentOS7cobbler
+│      
+├─47-监控系统基础及zabbix介绍、zabbix工作原理及安装配置、zabbix on CentOS7、zabbix配置
+│      1.监控系统基础及zabbix介绍
+│      2.zabbix工作原理及安装配置
+│      3.zabbix_on_CentOS7
+│      4.zabbix配置入门
+│      5.zabbix基本配置入门
+│      
+├─48-zabbix使用进阶、zabbix监控方式及分布式监控
+│      1.zabbix使用进阶
+│      2.zabbix使用进阶
+│      3.zabbix使用进阶
+│      4.zabbix监控方式及分布式监控
+│      
+├─49-Linux操作系统原理、虚拟化技术基础原理
+│      1.Linux操作系统原理
+│      2.Linux操作系统原理
+│      3.虚拟化技术基础原理
+│      4.虚拟化技术基础原理
+│      
+├─50-xen虚拟化技术基础、xen虚拟化技术进阶
+│      1.xen虚拟化技术基础
+│      2.xen虚拟化技术基础
+│      3.xen虚拟化技术进阶
+│      4.xen虚拟化技术进阶
+│      
+├─51-kvm技术基础、使用qemu-kvm管理kvm虚拟机
+│      1.kvm技术基础
+│      2.使用qemu-kvm管理kvm虚拟机
+│      3.使用qemu-kvm管理kvm虚拟机
+│      4.使用qemu-kvm管理kvm虚拟机
+│      
+├─52-kvm及libvirt、使用virsh管理kvm虚拟机、网络虚拟化技术基础、网络名称空间netns用法详解
+│      1.kvm及libvirt
+│      2.使用virsh管理kvm虚拟机
+│      3.网络虚拟化技术基础
+│      4.网络名称空间netns用法详解
+│      
+├─53(半天)-网络虚拟化技术进阶
+│      1.网络虚拟化技术进阶
+│      2.网络虚拟化技术进阶
+│      
+├─54-搜索引擎及Lucene基础、elasticsearch使用基础、ES使用详解、ES查询及Logstash入门
+│      1.搜索引擎及Lucene基础
+│      2.elasticsearch使用基础
+│      3.ES使用详解
+│      4.ES查询及Logstash入门
+│      
+├─55-logstach应用详解、ELK Stack、Hadoop基础
+│      1.logstash应用详解
+│      2.ELK Stack
+│      3.Hadoop基础
+│      4.Hadoop基础
+│      
+├─56-Hadoop进阶、面试技巧和实战培训
+│      1.hadoop伪分布式模型
+│      2.Hadoop 2分布式集群
+│      3.面试技巧和实战培训
+│      4.面试技巧和实战培训
+│      
+├─57-NoSQL基础及MongoDB、MongoDB基本应用、mongodb索引及复制集、数据库分片概念及mongodb sharding的实现
+│      1.NoSQL基础概念及MongoDB
+│      2.MongoDB基本应用
+│      3.mongodb索引及复制集
+│      4.数据库分片的概念及mongodb sharding的实现
+│      
+├─58-Openstack基础、openstack之glance、openstack之keystone、面试漫谈
+│      1.Openstack基础
+│      2.面试漫谈
+│      3.openstack之keystone
+│      4.openstack之glance
+│      
+├─59-openstack之compute、neutron、运行vm、cinder
+│      1.openstack之compute
+│      2.openstack之neutron
+│      3.openstack之运行vm
+│      4.openstack之cinder
+│      
+├─60-Linux系统调优
+│      1.Linux系统调优基础
+│      2.Linux系统调优基础
+│      3.Linux系统调优基础
+│      4.Linux系统调优基础
+│      
+├─61-redis基础入门、redis应用进阶
+│      1.redis基础入门
+│      2.redis应用进阶
+│      
+└─
