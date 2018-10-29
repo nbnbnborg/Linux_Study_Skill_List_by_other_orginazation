@@ -1,0 +1,345 @@
+├─Day01-OpenStack实战
+│      01-课程体系简介和学习要求
+│      02-云计算概述
+│      03-云计算VS虚拟化
+│      04-KVM介绍
+│      05-KVM安装
+│      06-KVM虚拟机介绍
+│      07.KVM管理
+│      08.KVM性能优化
+│      09.KVM的IO缓存介绍
+│      10.虚拟机创建和作业
+│      11.OpenStack历史
+│      12-OpenStack相关技术介绍
+│      13-OpenStack环境准备
+│      14-总结
+│      
+├─Day02-OpenStack实战
+│      1-OpenStack基础环境准备和KeyStone服务介绍
+│      2-OpenStack验证服务Keystone部署和测试
+│      3-OpenStack镜像服务Glance部署和测试
+│      4-OpenStack计算服务Nova控制部署和测试
+│      5-自动化分享-李永力
+│      6-架构设计分享-李永力
+│          
+├─Day03-OpenStack实战
+│      1-Nova计算节点部署和验证
+│      2-Neutron网络介绍
+│      3-Neutron控制节点部署
+│      4-Neutron控制节点部署和测试
+│      5.neutron计算节点部署和验证
+│      6.创建云主机
+│
+├─Day04-OpenStack实战
+│      1-Horizon部署
+│      2-Horizon介绍和创建虚拟机
+│      3-虚拟机创建流程
+│      4-深入了解虚拟机
+│      5-openstack虚拟机镜像
+│          
+├─Day05-OpenStack实战
+│      1-Cinder控制节点部署
+│      2-Cinder存储节点部署
+│      3-创建云硬盘并挂载
+│      4-Cinder使用NFS作为后端存储
+│      5-OpenStack架构小结
+│      6-实现阿里云ECS多FLAT网络
+│      7-实现阿里云VPC的SDN网络
+│      8-OpenStack常见架构
+│      
+├─Day06-实战dns深入讲解
+│      1-实战
+│      2-实战
+│      3-实战
+│      4-实战
+│      5-实战
+│      
+├─DAY07-系统自动化安装kickstart
+│      1-自动化安装系统介绍
+│      2-kickstart原理
+│      3-配置DHCP服务
+│      4-配置TFTP和HTTP服务
+│      5-配置支持PXE的启动程序
+│      6-手动网络安装
+│      7-ks文件语法
+│      8-整合ks所有配置
+│      9-自动安装系统及解决学生问题
+│      
+├─Day08-ITIL介绍+Cobbler自动化安装
+│      01-ITSM基本概念
+│      02-ITIL基本概念
+│      03-ITIL-服务运营-故障管理和问题管理
+│      04-ITIL服务运营-服务台
+│      05-Cobbler介绍
+│      06-Cobbler部署
+│      07-Cobbler基础组件
+│      08-Cobbler定制安装
+│      09-Cobbler API介绍
+│      10-Cobbler导入镜像
+│      11-.Cobbler自动化安装Cent0S7
+│      12-koan重新安装系统
+│      
+├─Day09-CentOS7系统实战
+│      02-安装CentOS7系统
+│           20180430134932
+│           20180430140109
+│      03-安装CentOS7系统
+│      04-补充安装命令
+│      05-修改网卡名称
+│      06-cobbler安装CentOS7
+│      07-网络配置相关命令
+│      08-主机名等配置文件
+│      09-Tomcat安装Jpress
+│      10-启动优化
+│          
+├─Day10-监控zabbix
+│      1-监控概述1
+│      2-监控概述2
+│      3.硬件监控-IPMI
+│      4.硬件监控-SNMP
+│      5.系统监控-CPU
+│      6.系统监控-内存和IO
+│      7.网络监控
+│      
+├─Day11-zabbix-1
+│      01-如何选择zabbix版本
+│      02-zabbix的安装及添加主机监控
+│      03-创建监控项item详解
+│      04-使用smtp发送邮件报警及定制报警内容
+│      05-web监控及mysql监控三部曲
+│      06-如何监控网络设备
+│      07-tcp的状态监控和nginx监控
+│      08-JMX监控详解
+│      09-Windows服务器的监控
+│      10-使用percona模板监控mysql
+│      11-zabbix2.2如何升级到3.0
+│      
+├─Day12-zabbix-2
+│      01-zabbix主动模式
+│      02-zabbix主动、被动、trapper模式的区别
+│      03-自动化监控网络发现
+│      04-自动化监控主动注册
+│      05-低级自动发现的介绍
+│      06-低级自动发现之mysql多实例
+│      07-分布式监控proxy
+│      08-zabbix_api的使用
+│      09-zabbix表结构和进程
+│      10-zabbix高可用
+│      11-zabbix优化方向和map制作
+│      
+├─Day13-Saltstack-1
+│      01-配置管理和SaltStack概述
+│      02-SaltStack入门-远程执行
+│      03-SaltStack入门-配置管理1
+│      04-SaltStack入门-配置管理2
+│      05-SaltStack数据系统-Grains
+│      06-SaltStack数据系统-Pillar
+│      07.SaltStack数据系统-Grain
+│      08.SaltStack远程执行-执行模块
+│      09.SaltStack远程执行-返回
+│      
+├─Day14-Saltstack-2
+│      11-SaltStack-salt-ssh介绍
+│      12-SaltStack-配置管理-LAMP状态设计
+│      13-SaltStack-配置管理-LAMP状态实现
+│      14-SaltStack-配置管理-状态间关系1
+│      15-SaltStack-配置管理-状态间关系2
+│      16-SaltStack-配置管理-jinja模板
+│      17-作业讲解：Saltstack部署Redis主从实现
+│      18-SaltStack-Job管理
+│      19-课后作业
+│      
+├─Day15-Saltstack-3
+│      SaltStack生产案例-haproxy-keepalived集群
+│      SaltStack生产案例-mysql集群1-需求分享
+│      SaltStack生产案例-mysql集群2-配置实现
+│      SaltStack生产案例-系统初始化1-需求梳理
+│      SaltStack生产案例-系统初始化2-salt模块识别
+│      SaltStack生产案例-系统初始化3-实现
+│      
+├─Day16-Saltstack-4
+│      01-SaltStack项目案例-haproxy-keepalived
+│      02-SaltStack项目案例-总结
+│      03-Salt架构-Masterless架构
+│      04-Salt-master高可用
+│      05-salt执行模块开发
+│      06-salt-syndic架构
+│      07-salt-api
+│      08-saltstack部署openstack介绍
+│      09-外加-Web缓存1
+│      10-外加-Web缓存2
+│      11-外加-WAF实现
+│      
+├─Day17-JAVA企业级应用TOMCAT实战
+│      01-tomcat简介
+│      02-tomcat安装
+│      03-tomcat启动及日志
+│      04-tomcat配置文件1
+│      05-tomcat主配置文件
+│      06-WEB站点部署
+│      07-tomcat多实例
+│      08-Tomcat集群
+│      09-Tomcat安装Jpress       
+│      09-systemd一统天下
+│           20180430155519
+│           20180430161849           
+│      10-zabbix监控Tomcat
+│           20180430204313
+│           20180430211737           
+│      11-tomcat调优
+│           20180430212330
+│           20180430214121
+│           20180430215023
+│          
+├─Day18-配置管理第一周
+│      01-git基础-环境安装
+│      02-分支管理
+│      03-Git高级管理
+│      04-git远程
+│      05-gitlab安装配置
+│      06-gitlab权限管理-issue管理
+│      07-gitlab备份恢复
+│      08-sourcetree使用
+│      09-持续集成简介
+│      10-jenkins安装
+│      11-jenkins插件
+│      12-jenkins配置
+│      
+├─Day19自动化集成
+│      01-git merge rebase jenkins
+│      02-jenkins-backup-restore
+│      03-jenkins-php-deploy
+│      04-jenkins-maven-java-deploy
+│      05-jenkins-git-parameter
+│      06-jenkins-ssh-remote
+│      07-jenkins-cluster
+│      08-jenkins-role-based
+│                                  
+├─Day20
+│      1-elk介绍及环境准备
+│      2-集群配置及监控
+│      3-logstash安装及基本语法
+│      4-通过logstash配置文件收集mess
+│      5-if 判断多个type类型
+│      6-收集nginx的json格式日志
+│      7-tomcat日志转json并收集
+│      8-收集java日志
+│      9-收集TCP日志
+│      
+├─Day21
+│      1-通过rsyslog收集haproxy日志
+│      2-日志写入redis及读取redis
+│      3-filebeat-redis-logstash-es
+│      4-日志流程回顾及监控redis队列长度
+│      5-filebeat单类型日志通过logstash写入redis
+│      6-filebeat收集多类型日志文件
+│      7-haproxy和nginx代理
+│      8-写入数据库前期准备
+│      
+├─Day22
+│      1-运维的价值
+│      2-课程总结回顾1
+│      3-课程总结回顾2
+│      4-课程总结回顾3
+│      5-引入cmdb
+│      6-cmdb设计和落地
+│      7-自动化扩容
+│      
+├─Day23-redis缓存数据架构实战
+│      1-Redis介绍
+│      2-redis安装配置
+│      3-redis保护模式
+│      4-redis数据类型
+│      6-redis队列订阅
+│      7-redis_sentinel
+│      8-redis集群构建
+│      
+├─Day24-docker
+│      1-docker简介
+│      2-docker容器简单操作
+│      3-docker镜像制作
+│      4-docker网络入门篇
+│      5-docker实现跨主机互联
+│      6-docker数据管理
+│      7-docker_file编写
+│      8-docker私库搭建
+│      9-docker容器编排
+│      
+├─DAY25
+│      01-未命名
+│      02-未命名
+│      03-未命名
+│      04-未命名
+│      05-未命名
+│      06-未命名
+│      07-未命名
+│      08-未命名
+│      09-未命名
+│      10-未命名
+│      11-未命名
+│      12-未命名
+│      13-未命名
+│      14-未命名
+│      15-未命名
+│      16-未命名
+│      17-未命名
+│      18-未命名
+│      19-未命名
+│      20-未命名
+│      21-未命名
+│      22-未命名
+│      23-未命名
+│      24-未命名
+│      25-未命名
+│      26-未命名
+│      27-未命名
+│      28-未命名
+│      29-未命名
+│      30-未命名
+│      31-未命名
+│      32-未命名
+│      33-未命名
+│      34-未命名
+│      35-未命名
+│      36-未命名
+│      37-未命名
+│      38-未命名
+│      39-未命名
+│      40-未命名
+│      41-未命名
+│      
+├─DAY26
+│      01-未命名
+│      02-未命名
+│      03-未命名
+│      04-未命名
+│      05-未命名
+│      06-未命名
+│      07-未命名
+│      08-未命名
+│      09-未命名
+│      10-未命名
+│      11-未命名
+│      12-未命名
+│      13-未命名
+│      14-未命名
+│      15-未命名
+│      16-未命名
+│      17-未命名
+│      18-未命名
+│      19-未命名
+│      20-未命名
+│      21-未命名
+│      22-未命名
+│      23-未命名
+│      24-未命名
+│      25-未命名
+│      26-未命名
+│      27-未命名
+│      28-未命名
+│      29-未命名
+│      30-未命名
+│      31-未命名
+│      32-未命名
+│       
+└─
