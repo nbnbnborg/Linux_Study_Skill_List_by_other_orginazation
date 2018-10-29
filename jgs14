@@ -19,8 +19,8 @@
 │      2-OpenStack验证服务Keystone部署和测试
 │      3-OpenStack镜像服务Glance部署和测试
 │      4-OpenStack计算服务Nova控制部署和测试
-│      5-自动化分享-李永力
-│      6-架构设计分享-李永力
+│      5-自动化分享
+│      6-架构设计分享
 │          
 ├─Day03-OpenStack实战
 │      1-Nova计算节点部署和验证
