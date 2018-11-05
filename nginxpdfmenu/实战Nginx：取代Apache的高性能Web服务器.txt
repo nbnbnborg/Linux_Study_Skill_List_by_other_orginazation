@@ -1,0 +1,200 @@
+第一部分 基础篇
+第1章 Nginx简介基本介绍
+1.1 常用的Web服务器简介  3
+1.1.1 Apache服务器  3
+1.1.2 Lighttpd服务器  3
+1.1.3 Tomcat服务器  4
+1.1.4 IBMWebSphere服务器  4
+1.1.5 MicrosoftIIS  4
+1.2 Nginx简介  4
+1.3 选择Nginx的理由  5
+1.3.1 它可以高并发连接  5
+1.3.2 内存消耗少  7
+1.3.3 配置文件非常简单  8
+1.3.4 成本低廉  8
+1.3.5 支持Rewrite重写规则  9
+1.3.6 内置的健康检查功能  9
+1.3.7 节省带宽  9
+1.3.8 稳定性高  9
+1.3.9 支持热部署  9
+1.4 Nginx与Apache、Lighttpd的综合对比  9
+
+第2章 Nginx服务器的安装与配置  11
+2.1 安装Nginx服务器所需要的系统资源  11
+2.2 Nginx的下载  12
+2.3 Nginx的安装  12
+2.3.1 Nginx在Windows环境下的安装  13
+2.3.2 Nginx在Linux环境下的安装  13
+2.4 Nginx的启动、停止、平滑重启  16
+2.4.1 Nginx的启动  17
+2.4.2 Nginx的停止  17
+2.5 Nginx的平滑重启  18
+2.6 Nginx的信号控制  18
+2.7 Nginx的平滑升级  19
+
+第2部分 进阶篇
+第3章 Nginx的基本配置与优化/21
+3.1 Nginx的完整配置示例/21
+3.2 Nginx的虚拟主机配置/23
+3.2.1 什么是虚拟主机/23
+3.2.2 配置基于IP的虚拟主机/24
+3.2.3 配置基于域名的虚拟主机/27
+3.3 Nginx的日志文件配置与切割/29
+3.3.1 用log_format指令设置日志格式/29
+3.3.2 用access_log指令指定日志文件存放路径  30
+3.3.3 Nginx日志文件的切割  32
+3.4 Nginx的压缩输出配置  33
+3.5 Nginx的自动列目录配置  35
+3.6 Nginx的浏览器本地缓存设置  36
+
+第4章 Nginx与PHP（FastCGI）的安装、配置与优化  38
+4.1 获取相关开源程序  39
+4.2 安装PHP5.2.1 0（FastCGI模式）  42
+4.3 安装Nginx0.8.1 5  52
+4.4 配置开机自动启动Nginx+PHP  55
+4.5 优化Linux内核参数  55
+4.6 在不停止Nginx服务的情况下平滑变更Nginx配置  56
+4.7 编写每天定时切割Nginx日志的脚本  56
+
+第5章 Nginx与JSP、ASP.NET、Perl的安装与配置  59
+5.1 Nginx与JSP（Tomcat）在Linux上的安装、配置  59
+5.2.1 Tomcat和JDK的安装  60
+5.1.2 Nginx与Tomcat的配置  61
+5.2 Nginx与ASP.NET（Mono+FastCGI）在Linux上的安装、配置  63
+5.2.1 Mono的安装  63
+5.2.2 Nginx与ASP.NET（Mono+FastCGI）的配置  64
+5.3 Nginx与Perl（FastCGI）在Linux上的安装、配置  67
+5.3.1 Perl（FastCGI）的安装  67
+5.3.2 Nginx与Perl（FastCGI）的配置  70
+
+第6章 NginxHTTP负载均衡和反向代理的配置与优化  73
+6.1 什么是负载均衡和反向代理  73
+6.1.1 负载均衡  73
+6.1.2 反向代理  73
+6.2 常见的Web负载均衡方法  74
+6.2.1 用户手动选择方式  74
+6.2.2 DNS轮询方式  75
+6.2.3 四/七层负载均衡设备  77
+6.2.4 多线多地区智能DNS解析与混合负载均衡方式  81
+6.3 Nginx负载均衡与反向代理的配置实例  83
+6.3.1 完整的Nginx反向代理示例如代码6-3所示  83
+6.3.2 Nginx负载均衡与反向代理实现动、静态网页分离  86
+6.4 Nginx负载均衡的HTTPUpstream模块  88
+6.4.1 ip_hash指令  89
+6.4.2 server指令  89
+6.4.3 upstream指令  90
+6.4.4 upstream相关变量  90
+6.5 Nginx负载均衡服务器的双机高可用  91
+
+第7章 Nginx的Rewrite规则编写实例  99
+7.1 什么是Nginx的Rewrite规则  99
+7.2 NginxRewrite规则相关指令  99
+7.2.1 break指令  100
+7.2.2 if指令  100
+7.2.3 return指令  101
+7.2.4 rewrite指令  104
+7.2.5 set指令  106
+7.2.6 uninitialized_variable_warn指令  106
+7.2.7 NginxRewrite可以用到的全局变量  106
+7.3 PCRE正则表达式语法  107
+7.4 Nginx的Rewrite规则编写实例  109
+7.5 Nginx与Apache的Rewrite规则实例对比  112
+7.5.1 简单的Nginx与ApacheRewrite重写规则  112
+7.5.2 允许指定的域名访问本站，其他域名一律跳转到
+7.5.3 URL重写与反向代理同时进行  114
+7.5.4 指定URL之外的URL进行Rewrite跳转  114
+7.5.5 域名前缀作为重写规则变量的示例  115
+
+第8章 Nginx模块开发  117
+8.1 Nginx模块概述  117
+8.2 Nginx模块编写实践  119
+8.2.1 HelloWorld模块编写与安装  119
+8.2.2 HelloWorld模块分析  121
+
+第9章 Nginx的Web缓存服务与新浪网的开源NCACHE模块  127
+9.1 什么是Web缓存？  127
+9.2 Nginx的Web缓存服务  128
+9.2.1 proxy_cache相关指令集  128
+9.2.2 proxy_cache完整示例  130
+9.2.3 fastcgi_cache相关指令集  131
+9.3 新浪网开源软件项目——基于Nginx的NCache网页缓存系统  135
+9.3.1 NCACHE模块的安装  136
+9.3.2 NCACHE配置文件编写  136
+9.3.3 NCACHE的管理维护  138
+9.3.4 NCACHE后端内容源服务器设置  139
+
+第3部分 实战篇
+第10章 Nginx在国内知名网站中的应用案例  141
+10.1 Nginx反向代理与负载均衡类网站应用案例  142
+10.1.1 Nginx负载均衡在新浪播客中的应用  142
+10.1.2 Nginx负载均衡在金山逍遥网中的应用  146
+10.2 Nginx+PHP类网站应用案例  152
+10.2.1 Nginx+PHP在金山逍遥网CMS发布系统中的应用  152
+10.2.2 Nginx+PHP在某分类信息网站中的应用  154
+
+第11章 Nginx的非典型应用实例  171
+11.1 用HTTPS（SSL）构建一个安全的NginxWeb服务器  171
+11.1.1 自行颁发不受浏览器信任的SSL证书  171
+11.1.2 向CA机构申请颁发受浏览器信任的SSL证书  174
+11.2 采用Nginx搭建FLV视频服务器  176
+11.2.1 采用Nginx的FlvStream模块搭建HTTP下载方式的FLV视频服务器  176
+11.2.2 采用Nginx实现FMS/Red5流媒体视频服务器的负载均衡  177
+11.3 Nginx+PHP+MySQL在小内存VPS服务器上的优化  179
+11.3.1 增加swap交换文件  180
+11.3.2 Nginx的主配置文件（nginx.conf）优化  180
+11.3.3 PHP（FastCGI）的配置优化  182
+11.3.4 MySQL5.1 配置优化  182
+11.4 采用Nginx搭建正向代理服务器  184
+
+第4部分 模块篇 
+第12章 Nginx的核心模块 185
+12.1 主模块指令 185
+12.2 主模块变量 193
+12.3 事件模块指令 194
+第13章 Nginx的标准模块 197
+13.1 HTTP的核心模块 197
+13.2 Upstream模块 219
+13.3 Http Access 模块 219
+13.4 Auth Basic 模块 220
+13.5 Http Autoindex 模块 221
+13.6 Http Browser 模块 222
+13.7 Http Charset 模块 226
+13.8 Http Empty Gif模块 228
+13.9 Http Fcgi 模块 228
+13.10 Geo 模块 235
+13.11 Gzip 模块 237
+13.12 Http Headers模块 241
+13.13 Http Index模块 243
+13.14 Referer模块 243
+13.15 Http Limit Zone模块 244
+13.16 Http Limit Req模块 246
+13.17 Http Log模块 248
+13.18 Http Map模块 250
+13.19 Http Memcached模块 252
+13.20 Http Proxy模块 257
+13.21 Http Rewrite模块 272
+13.22 Http SSL模块 272
+13.27 Http Userid模块 277
+第14章 Nginx的其他模块 280
+14.1 Http Addition模块 280
+14.2 Embedded Perl模块 281
+14.3 Flv Stream模块 286
+14.3 flv 指令 287
+14.4 Http Gzip Static模块 287
+14.5 Http Random Index模块 288
+14.6 Http Geo IP模块 288
+14.7 Http RealIp模块 290
+14.8 Http SSL模块 291
+14.9 Http Stub Status模块 298
+14.10 Http Sub模块 299
+14.11 Http Dav模块 300
+14.12 Google Perftools模块 302
+14.13 Http XSLT模块 302
+14.14 Http Secure Link模块 304
+14.15 Http Image Filter模块 306
+第15章 Nginx的邮件模块 301
+15.1 Nginx邮件核心模块 303
+15.2 Nginx邮件认证模块 307
+15.3 Nginx邮件代理模块 308
+15.4 Nginx邮件SSL模块 310
+15.5 Nginx邮件模块配置实例 312
