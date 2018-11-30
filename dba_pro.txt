@@ -1,0 +1,131 @@
+├─L001-oldboy-mysql-dba-lesson01
+│      1-未命名
+│      2-未命名
+│      3-未命名
+│      4-未命名
+│      5-未命名
+│      6-未命名
+│      7-未命名
+│      
+├─L002-oldboy-mysql-dba-lesson02
+│      1-未命名
+│      2-未命名
+│      3-未命名
+│      4-未命名
+│      5-未命名
+│      
+├─L003-oldboy-mysql-dba-lesson03
+│      1-未命名
+│      2-未命名
+│      3-未命名
+│      4-未命名
+│      5-未命名
+│      6-未命名
+│      7-未命名
+│      
+├─L004-oldboy-mysql-dba-lesson04
+│      1-未命名
+│      2-未命名
+│      3-未命名
+│      4-未命名
+│      5-未命名
+│      6-未命名
+│      7-未命名
+│      8-未命名
+│      
+├─L005-oldboy-mysql-dba-lesson05
+│      1-未命名
+│      2-未命名
+│      3-未命名
+│      4-未命名
+│      5-未命名
+│      6-未命名
+│      7-未命名
+│      
+├─L006-oldboy-mysql-dba-lesson06
+│      01-SQL优化最佳实践
+│      02-存储过程
+│      03-触发器
+│      04-自定义函数
+│      05-视图
+│      06-外键与缓存
+│      07-缓冲应用方案
+│      08-事务
+│      09-总结
+│      10-预习内容
+│      
+├─L007-oldboy-mysql-dba-lesson07
+│      1-SQL执行过程
+│      2-备份的意识
+│      3-备份方案选择
+│      4-备份与恢复演练1
+│      5-未命名
+│      6-逻辑备份演练1
+│      7-物理备份演练
+│      8-回顾
+│      
+├─L008-oldboy-mysql-dba-lesson08
+│      01-mysqldump备份方案
+│      02-xtrabackup原理介绍
+│      03-各种备份方案介绍
+│      04-mysqldump备份演练
+│      05-xtrabackup备份演练
+│      06-xtrabackup全量和增量恢复
+│      07-恢复整个过程演练
+│      
+├─L009-oldboy-mysql-dba-lesson09
+│      1-复制概述
+│      2-复制如何工作
+│      3-复制配置过程
+│      4-复制原理
+│      5-复制架构和容量规划
+│      6-管理复制以及常见问题处理
+│      7-相关问题解答
+│      
+├─L010-oldboy-mysql-dba-lesson10
+│      1-高可用概述
+│      2-高可用方案之MMM
+│      3-高可用方案之LVS-Keeplived-MM
+│      4-高可用方案之Heartbeat-DRBD
+│      5-高可用方案之PXC
+│      6-高可用方案之MHA
+│      6-高可用方案之NDBCluster
+│      7-数据库中间层
+│      8-总结
+│      
+├─L011-oldboy-mysql-dba-lesson11
+│      01-MySQL命令工具
+│      02-MySQL图形化工具
+│      03-percona的toolkit工具介绍
+│      04-GTID的特性
+│      05-MySQL的sharding体系
+│      06-MySQL的监控体系
+│      07-MySQL安全管理
+│      08-MySQL升级要注意什么
+│      09-MySQL答疑1
+│      10-MySQL答疑2
+│      
+├─L012-oldboy-mysql-dba-lesson12
+│      1-zabbix监控MySQL
+│      2-nagios监控报警
+│      3-MySQL5.7的新特性
+│      4-RDBMS的发展
+│      5-memcached介绍
+│      6-redis简单介绍
+│      7-mongoDB和HBase简单介绍
+│      
+├─L013-oldboy-mysql-dba-lesson13
+│      1-MySQL日常问题处理总结
+│      2-如何成为一个好的MySQL DBA
+│      3-MySQL问题解答
+│      4-MySQL面试题专家解答1
+│      5-MySQL面试题专家解答2
+│      
+├─L014-oldboy-mysql-dba-lesson14
+│      1-MySQL集群与高可用实战
+│      2-MySQL集群与高可用实战
+│      3-MySQL集群与高可用实战
+│      4-MySQL集群与高可用实战
+│      5-MySQL集群与高可用实战
+│       
+└─
