@@ -1,0 +1,142 @@
+前言
+第1章 Ansible架构及特点 1
+1.1 Ansible软件及公司 2
+1.1.1 Ansible应用领域 3
+1.1.2 Ansible软件发布 5
+1.1.3 Ansible公司服务 8
+1.2 Ansible架构模式 9
+1.2.1 Ansible管理方式 10
+1.2.2 Ansible系统架构 11
+1.2.3 任务执行模式 13
+1.3 Ansible特性 14
+1.3.1 Ansible功能特性 14
+1.3.2 Ansible与其他配置管理的对比 21
+1.4 Ansible与DevOps 22
+1.5 本章小结 26
+第2章 Ansible安装与配置 27
+2.1 Ansible环境准备 27
+2.2 安装Ansible 30
+2.2.1 直接用源码安装 30
+2.2.2 用包管理工具安装 32
+2.3 配置运行环境 34
+2.3.1 配置Ansible环境 34
+2.3.2 使用公钥认证 36
+2.3.3 配置Linux主机SSH无密码访问 36
+2.4 Ansible小试身手 38
+2.4.1 主机连通性测试 38
+2.4.2 在被管节点上批量执行命令 39
+2.5 获取帮助信息 40
+2.6 本章小结 42
+第3章 Ansible 组件介绍 43
+3.1 Ansible Inventory 43
+3.2 Ansible Ad-Hoc 命令 49
+3.3 Ansible playbook 56
+3.4 Ansible facts 56
+3.5 Ansible role 60
+3.6 Ansible Galaxy 63
+3.7 本章小结 63
+第4章 playbook详解 64
+4.1 playbook基本语法 64
+4.2 playbook变量与引用 70
+4.3 playbook循环 81
+4.4 playbook lookups 91
+4.5 playbook conditionals 96
+4.6 Jinja2 filter 99
+4.7 playbook内置变量 102
+4.8 本章小结 106
+第5章 Ansible最佳实践 107
+5.1 优化Ansible速度 107
+5.2 目录结构 113
+5.3 定义多环境 115
+5.4 灰度发布与检测 115
+5.5 统一管理 116
+5.6 使用ansible-shell交互命令行 116
+5.7 本章小结 118
+第6章 扩展Ansible组件 119
+6.1 扩展facts 119
+6.2 扩展模块 125
+6.3 callback插件 130
+6.4 lookup插件 137
+6.5 Jinja2 filter 139
+6.6 本章小结 143
+第7章 用ansible-vault保护敏感数据 144
+7.1 了解ansible-vault如何保护数据 145
+7.1.1 高级加密标准 145
+7.1.2 ansible-vault能够加密什么 145
+7.2 使用ansible-vault 146
+7.2.1 创建加密数据文件 146
+7.2.2 更新加密的数据文件 147
+7.2.3 变更加密数据密钥 148
+7.3 典型应用场景 148
+7.3.1 实践场景1：保护Ansible role中的敏感数据 149
+7.3.2 实践场景2：使用加密做用户认证 151
+7.3.3 实践场景3：保护Nginx中的SSL密钥 152
+7.4 本章小结 155
+第8章 Ansible与云计算 156
+8.1 了解云平台管理流程 156
+8.2 Ansible AWS和OpenStack 157
+8.3 Ansible与Docker 162
+8.4 Ansible Jenkins 165
+8.5 本章小结 169
+第9章 部署Zabbix组件 170
+9.1 了解部署流程 170
+9.2 编写业务roles 171
+9.3 安装部署 177
+9.4 本章小结 179
+第10章 部署HAProxy + LAMP架构 180
+10.1 了解整体架构流程 180
+10.2 编写业务roles 181
+10.3 配置部署以及测试 186
+10.4 扩容与维护 188
+10.5 本章小结 189
+第11章 大数据环境的应用实战 190
+11.1 某运营商大数据环境 191
+11.2 准备大数据集群环境 192
+11.2.1 安装操作系统 195
+11.2.2 操作系统初始化 198
+11.2.3 Ansible无口令密钥执行环境 204
+11.2.4 安装、配置JDK 205
+11.3 部署Hadoop集群 207
+11.3.1 准备Hadoop基础角色 209
+11.3.2 部署NameNode角色 219
+11.3.3 部署资源管理器角色 221
+11.3.4 部署DataNode角色 222
+11.4 部署后Hadoop初始化与验证 223
+11.4.1 部署后初始化 223
+11.4.2 部署后Hadoop验证 224
+11.5 本章小结 226
+第12章 Ansible管理Windows系统 227
+12.1 Ansible管理Windows工作原理 228
+12.2 搭建Ansible管理工作组Windows环境 229
+12.2.1 安装、配置控制主机 230
+12.2.2 被管Windows主机配置 230
+12.2.3 配置资源清单 232
+12.2.4 测试被管Windows主机的连通性 234
+12.2.5 常见问题处理 235
+12.3 搭建Ansible管理活动目录Windows环境 236
+12.4 支持管理Windows模块 239
+12.5 常用Windows管理实例 240
+12.6 本章小结 244
+第13章 网络自动化管理的应用实战 246
+13.1 网络管理也自动化了 246
+13.2 Ansible官方集成的网络角色 249
+13.3 生成配置文件及部署 251
+13.3.1 生成网络配置模板 252
+13.3.2 部署配置模板 255
+13.4 通过SNMP方式配置网络 257
+13.5 网络设备厂商提供接口实现自动化 259
+13.5.1 管理Cisco NX-OS 259
+13.5.2 管理JUNOS 269
+13.5.3 管理Cumulus Linux 273
+13.6 本章小结 279
+第14章 Ansible API 280
+14.1 runner API 280
+14.2 playbook API 283
+14.3 使用Flask封装Ansible API 286
+14.4 使用Celery实现任务异步化 290
+14.5 使用jQuery Ajax异步请求 297
+14.6 本章小结 300
+附录A Ansible.cfg配置文件参数详解 301
+附录B YAML与Jinjia 306
+附录C Ansible pull模式 312
+附录D SSH Forward模式 316
