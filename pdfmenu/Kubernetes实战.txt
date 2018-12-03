@@ -1,0 +1,195 @@
+第1部分 Kubernetes基础篇
+第1章 Kubernetes介绍  2
+1.1为什么会有Kubernetes  2
+1.1.1云计算大潮  2
+1.1.2不温不火的PaaS  5
+1.1.3 Docker的逆袭  5
+1.2 Kubernetes是什么  7
+1.3 Kubernetes的发展历史  8
+1.4 Kubernetes的核心概念  9
+1.4.1 Pod  9
+1.4.2 Replication Controller  9
+1.4.3 Service  9
+1.4.4 Label  9
+1.4.5 Node  9
+第2章 Kubernetes的架构和部署  10
+2.1 Kubernetes的架构和组件  10
+2.2 部署Kubernetes  13
+2.2.1环境准备  14
+2.2.2 运行Etcd  15
+2.2.3 获取Kubernetes发布包  16
+2.2.4 运行Kubernetes Master组件  16
+2.2.5 运行Kubernetes Node组件  17
+2.2.6 查询Kubernetes的健康状态  18
+2.2.7 创建Kubernetes覆盖网络  19
+2.3 安装Kubernetes扩展插件  22
+2.3.1 安装Cluster DNS 23
+2.3.2 安装Cluster Monitoring  28
+2.3.3 安装Cluster Logging  36
+2.3.4 安装Kube UI  43
+第3章 Kubernetes快速入门  46
+3.1示例应用 Guestbook  46
+3.2准备工作  47
+3.3 运行Redis  48
+3.3.1 创建Redis Master Pod  48
+3.3.2 创建Redis Master Service  49
+3.3.3 创建Redis Slave Pod  51
+3.3.4 创建Redis Slave Service  53
+3.4 运行Frontend  54
+3.4.1 创建Frontend Pod  54
+3.4.2 创建Frontend Service 57
+3.5 设置Guestbook外网访问  57
+3.6 清理Guestbook  59
+第4章 Pod  60
+4.1国际惯例的Hello World  60
+4.2 Pod的基本操作  62
+4.2.1 创建Pod  62
+4.2.2 查询Pod  62
+4.2.3 删除Pod  65
+4.2.4 更新Pod  65
+4.3 Pod与容器  65
+4.3.1 镜像  66
+4.3.2启动命令  69
+4.3.3环境变量  70
+4.3.4 端口  72
+4.3.5数据持久化和共享  73
+4.4 Pod的网络  74
+4.5 Pod的重启策略  75
+4.6 Pod的状态和生命周期  77
+4.6.1容器状态  77
+4.6.2 Pod的生命周期阶段  78
+4.6.3生命周期回调函数  79
+4.7自定义检查Pod  81
+4.7.1 Pod的健康检查  83
+4.7.2 Pod的准备状况检查  84
+4.8 调度Pod  85
+4.9问题定位指南  87
+4.9.1事件查询  88
+4.9.2日志查询  88
+4.9.3 Pod的临终遗言  89
+4.9.4远程连接容器  90
+第5章 Replication Controller 92
+5.1持续运行的Pod  92
+5.2 Pod模板  94
+5.3 Replication Controller和 Pod的关联  96
+5.4弹性伸缩  99
+5.5自动伸缩  101
+5.6滚动升级  104
+5.7 Deployment  107
+5.8一次性任务的 Pod  112
+第6章 Service  114
+6.1 Service代理Pod  114
+6.2 Service的虚拟IP 118
+6.3服务代理  119
+6.4服务发现  123
+6.4.1环境变量  124
+6.4.2 DNS  125
+6.5 发布Service  128
+6.5.1 NodePort Service  128
+6.5.2 LoadBalancer Service 129
+6.5.3 Ingress  130
+第7章 数据卷  134
+7.1 Kubernetes数据卷  134
+7.2本地数据卷  135
+7.2.1 EmptyDir  135
+7.2.2 HostPath  136
+7.3网络数据卷  137
+7.3.1 NFS  137
+7.3.2 iSCSI  138
+7.3.3 GlusterFS  140
+7.3.4 RBD（Ceph Block Device） 141
+7.3.5 Flocker  142
+7.3.6 AWS Elastic Block Store 143
+7.3.7 GCE Persistent Disk  144
+7.4 Persistent Volume和 Persistent Volume Claim 145
+7.4.1 创建Persistent Volume  147
+7.4.2 创建Persistent Volume Claim  149
+7.5信息数据卷  151
+7.5.1 Secret  151
+7.5.2 Downward API  153
+7.5.3 Git Repo  155
+第8章 访问Kubernetes API  157
+8.1 API对象与元数据  157
+8.2如何访问Kubernetes API 159
+8.3使用命令行工具kubectl  160
+8.3.1 配置Kubeconfig 161
+8.3.2 Kubernetes操作  163
+8.3.3 API对象操作  164
+8.3.4 Pod操作  168
+8.3.5 Replication Controller操作  169
+8.3.6 Service操作  170
+第2部分 Kubernetes高级篇
+第9章 Kubernetes网络  172
+9.1 Docker网络模型  172
+9.2 Kubernetes网络模型  173
+9.3容器间通信  174
+9.4 Pod间通信  176
+9.4.1 Flannel实现Kubernetes覆盖网络  177
+9.4.2 使用Open vSwitch实现Kubernetes覆盖网络  180
+9.5 Service到Pod通信  183
+9.5.1 Userspace模式  184
+9.5.2 Iptables模式  186
+第10章 Kubernetes安全  189
+10.1 Kubernetes安全原则  189
+10.2 Kubernetes API的安全访问  189
+10.2.1 HTTPS  190
+10.2.2认证与授权  191
+10.2.3 准入控制Admission Controller 194
+10.3 Service Account  195
+10.3.1 使用默认Service Account  196
+10.3.2创建自定义Service Account  199
+10.3.3 Service Account添加Image Pull Secret  201
+10.4容器安全  202
+10.4.1 Linux Capability  202
+10.4.2 SELinux  204
+10.5 多租户  204
+第11章 Kubernetes资源管理  206
+11.1 Kubernetes资源模型  206
+11.2资源请求和限制 207
+11.3 Limit Range  210
+11.4 Resource Quota 215
+第12章 管理和运维Kubernetes  219
+12.1 Daemon Pod  219
+12.1.1 Static Pod  219
+12.1.2 Daemon Set  221
+12.2 Kubernetes的高可用性  222
+12.3平台监控  224
+12.3.1 cAdvisor  224
+12.3.2 Heapster  228
+12.4平台日志  230
+12.5垃圾清理  234
+12.5.1 镜像清理  235
+12.5.2 容器清理  235
+12.6 Kubernetes的Web界面  235
+第3部分 Kubernetes生态篇
+第13章 CoreOS  240
+13.1 CoreOS介绍  240
+13.2 CoreOS工具链  241
+13.2.1 Etcd  241
+13.2.2 Flannel  241
+13.2.3 Rocket  241
+13.2.4 Systemd  241
+13.2.5 Fleet  241
+13.3 CoreOS实践  242
+13.3.1 安装CoreOS  242
+13.3.2 使用CoreOS运行Kubernetes  245
+第14章 Etcd  247
+14.1 Etcd介绍  247
+14.2 Etcd的结构  248
+14.2.1 Client-to-Server  249
+14.2.2 Peer-to-Peer  250
+14.3 Etcd实践  250
+14.3.1 运行Etcd  250
+14.3.2 Etcd集群化  251
+14.3.3 Etcd Proxy模式  258
+14.3.4 Etcd的安全模式  259
+第15章 Mesos  262
+15.1 Mesos介绍  262
+15.2 Mesos的架构  263
+15.3 Marathon和K8SM介绍  264
+15.3.1 Marathon  264
+15.3.2 K8SM  265
+15.4 Mesos实践  266
+15.4.1 运行Mesos  266
+15.4.2 运行Marathon  268
+15.4.3 运行K8SM  270
