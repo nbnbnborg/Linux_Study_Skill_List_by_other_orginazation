@@ -1,0 +1,289 @@
+原书推荐序
+前言
+第1章 概述 1
+	关于版本的说明 2
+	Ansible的优点 2
+	Ansible如何运作 3
+	Ansible的精妙设计有哪些 4
+	易读的语法 4
+	远程主机无须安装任何依赖 5
+	基于推送模式 5
+	Ansible管理小规模集群 6
+	内置模块 6
+	非常轻量的抽象层 7
+	Ansible太过于简单了吗 8
+	我需要具备哪些基础知识 9
+	哪些内容不会涉及 9
+	安装Ansible 10
+	建立一台用于测试的服务器 11
+	使用Vagrant来创建测试服务器 11
+	将测试服务器的信息配置在Ansible 中 15
+	使用ansible.cfg文件来简化配置 16
+	继续前进 20
+第2章 playbook：一切的开端 21
+	一些准备工作 21
+	一个简单的playbook 22
+	指定一个nginx配置文件 24
+	创建一个定制的首页 25
+	创建一个webservers群组 25
+	运行这个playbook 26
+	playbook是YAML格式的 28
+	文件的起始 28
+	注释 28
+	字符串 28
+	布尔型 29
+	列表 29
+	字典 30
+	折行 30
+	剖析playbook 31
+	play 32
+	task 33
+	模块 34
+	将它们整合在一起 35
+	执行Ansible 后发生变化了吗？跟踪主机状态 36
+	来点更酷炫的：添加TLS支持 36
+	生成TLS证书 38
+	变量 38
+	生成nginx配置模板 40
+	handler 41
+	运行playbook 43
+第3章 inventory：描述你的服务器 45
+	inventory 文件 45
+	准备工作：创建多台Vagrant 虚拟机 46
+	inventory行为参数 49
+	ansible_connection 50
+	ansible_shell_type 50
+	ansible_python_interpreter 50
+	ansible_*_interpreter 50
+	改变行为参数的默认值 51
+	群组 51
+	范例：部署一个Django 应用 52
+	别名和端口 55
+	群组嵌套 55
+	编号主机（宠物vs. 公牛） 56
+	主机与群组变量：在inventory 内部 56
+	主机和群组变量：在各自的文件中 58
+	动态inventory 60
+	动态inventory脚本的接口 61
+	编写动态inventory脚本 62
+	预装的inventory脚本 65
+	将inventory分割到多个文件中 66
+	使用add_host和group_by在运行时添加条目 66
+	add_host 66
+	group_by 68
+第4章 变量与fact 71
+	在playbook中定义变量 71
+	查看变量的值 72
+	注册变量 72
+	fact 76
+	查看与某台服务器关联的所有fact 77
+	查看fact 子集 77
+	任何模块都可以返回fact 79
+	本地fact 79
+	使用set_fact定义新变量 80
+	内置变量 81
+	hostvars 81
+	inventory_hostname 82
+	groups 82
+	在命令行设置变量 83
+	优先级 84
+第5章 初识Mezzanine：我们的测试应用 85
+	为什么向生产环境部署软件是一件复杂的事 85
+	PostgreSQL：数据库 88
+	Gunicon：应用服务器 88
+	nginx：Web服务器 89
+	Supervisor：进程管理器 90
+第6章 使用Ansible部署Mezzanine 91
+	列出playbook中的task 91
+	组织要部署的文件 92
+	变量与私密变量 92
+	使用迭代（with_items）安装多个软件包 94
+	向task中添加sudo语句 96
+	更新apt缓存 96
+	使用Git来Check Out 项目源码 98
+	将Mezzanine 和其他软件包安装到virtualenv 中 99
+	task中的复杂参数：稍微跑个题 102
+	创建数据库和数据库用户 104
+	从模板生成local_settings.py 文件 105
+	运行django-manage命令 108
+	在应用环境中运行自定义的Python 脚本 110
+	设置服务的配置文件 112
+	启用nginx配置文件 115
+	安装TLS证书 116
+	安装Twitter计划任务 117
+	playbook全文 118
+	在Vagrant虚拟机上运行playbook 121
+	将Mezzanine部署到多台主机 122
+第7章 复杂playbook 123
+	在控制主机上运行task 123
+	在涉及的主机以外的机器上运行task 124
+	手动采集fact 124
+	逐台主机运行 125
+	只执行一次 126
+	处理不利行为命令：changed_when和failed_when 127
+	从主机获取IP地址 131
+	使用Vault加密敏感数据 132
+	通过模式匹配指定主机 133
+	限定某些主机运行 134
+	过滤器 135
+	default过滤器 135
+	用于注册变量的过滤器 135
+	应用于文件路径的过滤器 136
+	编写你自己的过滤器 137
+	lookup 138
+	file 139
+	pipe 140
+	env 140
+	password 141
+	template 141
+	csvfile 141
+	dnstxt 142
+	redis_kv 143
+	etcd 144
+	编写你自己的lookup插件 145
+	更复杂的循环 145
+	with_lines 146
+	with_fileglob 146
+	with_dict 147
+	将循环结构用作lookup插件 148
+第8章 role：扩展你的playbook 149
+	role的基本构成 149
+	范例：Database和Mezzanine role 150
+	在你的playbook中使用role 150
+	Pre-Task和Post-Task 152
+	用于部署数据库的“database” role 153
+	用于部署Mezzanine的“mezzanine” role 155
+	使用ansible-galaxy创建role 文件与目录 160
+	从属role 160
+	Ansible Galaxy 161
+	Web界面 161
+	命令行工具 162
+	向Galaxy贡献你自己编写的role 163
+第9章 让Ansible快到飞起 165
+	SSH Multiplexing与ControlPersist 165
+	手动启用SSH Multiplexing 166
+	Ansible中的SSH Multiplexing选项 167
+	pipelining 169
+	启用pipelining 169
+	将主机配置为支持pipelining 169
+	fact缓存 171
+	JSON文件fact 缓存后端 172
+	Redis fact缓存后端 173
+	Memcached fact缓存后端 173
+	并行性 174
+	加速模式 175
+	火球模式 175
+第10章 自定义模块 177
+	范例：检测远程服务器是否可达 177
+	使用script模块替代编写自己的模块 177
+	模块形式的can_reach 178
+	自定义模块该放到哪里 179
+	Ansible如何调用模块 179
+	生成带有参数的独立Python 脚本（仅限Python 模块） 179
+	将模块复制到远程主机 179
+	在远程主机上创建参数文件（仅限非Python 模块） 179
+	调用模块 180
+	预期的输出 181
+	Ansible预期的输出变量 181
+	使用Python来实现模块 182
+	解析参数 183
+	访问参数 184
+	导入AnsibleModule辅助类 184
+	参数选项 185
+	AnsibleModule的初始化参数 188
+	返回成功或失败 191
+	调用外部命令 192
+	检测模式（dry run） 193
+	文档化你的模块 194
+	调试你的模块 196
+	使用Bash实现模块 197
+	为Bash指定替代的位置 198
+	范例模块 199
+第11章 Vagrant 201
+	便捷的Vagrant配置项 201
+	端口转发和私有IP地址 201
+	启用agent forwarding 203
+	Ansible置备器 203
+	置备器何时运行 204
+	由Vagrant生成inventory 204
+	并行配置 205
+	指定群组 206
+第12章 Amazon EC2 209
+	术语 211
+	实例 211
+	Amazon系统镜像 211
+	标签 211
+	指定认证凭据 212
+	环境变量 212
+	配置文件 213
+	必要条件：Boto Python库 213
+	动态inventory 214
+	inventory 缓存 216
+	其他配置项 217
+	自动生成群组 217
+	使用标签定义动态群组 217
+	把标签应用到现有资源 218
+	更好听的群组名 219
+	EC2 Virtual Private Cloud（VPC）和EC2 Classic 219
+	配置ansible.cfg支持使用EC2 220
+	启动新的实例 221
+	EC2密钥对 222
+	创建新的密钥 222
+	上传已有密钥 224
+	安全组 224
+	允许的IP地址 226
+	安全组端口 226
+	获取最新的AMI 226
+	向群组中添加一个新的实例 227
+	等待服务器启动 230
+	创建实例的幂等性方法 231
+	全部加在一起 231
+	指定Virtual Private Cloud 233
+	动态inventory 和VPC 237
+	构建AMI 238
+	使用ec2_ami模块 238
+	使用Packer 238
+	其他模块 242
+第13章 Docker 243
+	Docker与Ansible配合案例 244
+	Docker应用的生命周期 244
+	容器化我们的Mezzanine应用 245
+	使用Ansible创建Docker镜像 247
+	Mezzanine 248
+	其他的容器镜像 253
+	Postgres 253
+	Memcached 253
+	Nginx 254
+	certs 255
+	构建镜像 256
+	部署Docker化的应用 256
+	启动数据库容器 257
+	获取数据库容器的IP地址和映射端口 257
+	等待数据库启动 261
+	初始化数据库 263
+	启动Memcached容器 264
+	启动Mezzanine容器 264
+	启动证书容器 265
+	启动Nginx容器 265
+	完整的playbook 266
+第14章 调试Ansible playbook 269
+	调试SSH问题 269
+	debug模块 271
+	assert模块 271
+	在执行前检查你的playbook 273
+	语法检查 273
+	列出主机 273
+	列出task 274
+	检测模式 274
+	diff（显示文件差异） 275
+	限制特定的task运行 275
+	step 275
+	start-at-task 276
+	tags 276
+	继续向前 277
+附录A SSH 279
+附录B 默认设置 289
+附录C 为EC2证书使用IAM role 293
+术语 297
+参考文献 303
+索引 305
