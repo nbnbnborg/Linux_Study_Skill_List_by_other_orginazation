@@ -1,0 +1,392 @@
+序 xxiii
+第2版前言  xxv
+第1版前言  xxvii
+
+第1章　简介 1
+关于版本的说明  2 
+Ansible的优势  2 
+Ansible如何运作  3 
+Ansible的精妙设计赏析  4
+易读的语法 4
+远程主机无须安装依赖  5
+基于推送模式  5
+使用 Ansible管理小规模环境  6
+内置模块  6
+非常轻量的抽象层  7 
+Ansible太过于简单了吗  8
+需要哪些基础知识  8
+哪些内容不会涉及  9
+安装Ansible  10
+建立一台用于测试的服务器  11
+使用Vagrant来创建测试服务器  11
+将测试服务器的信息配置在Ansible中  14 
+使用ansible.cfg文件来简化配置  16
+展望  19
+
+第2章　playbook：一切的开始 20
+一些准备工作  20
+一个简单的playbook  21
+定义Nginx的配置文件  23
+创建一个定制的首页  24
+创建一个webservers群组  25
+运行这个playbook  25 
+YAML格式的playbook  27
+文件起始  27
+注释  27
+字符串  27
+布尔型  28
+列表  28
+字典  28
+分行  29
+剖析playbook  30 
+play 31 
+task  32
+模块  33
+将它们整合在一起  34
+执行Ansible后发生变化了吗？跟踪主机状态  35
+来点更酷炫的：添加 TLS支持  35
+生成TLS证书  36
+变量  37
+生成Nginx配置模板  39 
+handler  41
+运行playbook 42
+
+第3章　使用inventory描述你的服务器 44 
+inventory文件 44
+准备工作：创建多台 Vagrant虚拟机  45 
+inventory 行为参数  48 
+ansible_connection  49 
+ansible_shell_type  49 
+ansible_python_interpreter  49 
+ansible_*_interpreter  49
+改变行为参数的默认值  50
+群组  50
+范例：部署一个 Django应用 51
+别名和端口 54
+群组的群组 54
+为主机编号（宠物还是公牛 )  55
+在 inventory内部的主机和组变量  55
+在各自文件中的主机和组变量  57
+动态 inventory 59
+动态 inventory脚本接口  60
+编写动态 inventory脚本  61
+预装 inventory脚本  65
+将 inventory分割到多个文件  65
+使用 add_host和 group_by在运行时添加条目  65 
+add_host  65 
+group_by  67
+
+第4章　变量与fact 69
+在playbook中定义变量  69
+检查变量的值  70 
+registering变量  70 
+fact  74
+查看与某台服务器关联的所有fact  75
+查看fact子集  75
+任何模块都可以返回 fact  77
+本地fact  77
+使用set_fact定义新变量  79
+内置变量  79 
+hostvars  80 
+inventory_hostname  80 
+groups  81
+在命令行设置变量  81
+优先级  82
+
+第5章　引入测试应用：Mezzanine  84
+为什么向生产环境部署软件是一件复杂的事  84 
+PostgreSQL：数据库  88 
+Gunicorn：应用服务器  88 
+Nginx：Web服务器  89 
+Supervisor：进程管理器  90
+
+第6章　使用Ansible部署Mezzanine91
+列出playbook中的task 91
+组织要部署的文件  92
+变量和秘密变量  93
+使用迭代（with_items）安装多个软件包  95
+向任务中添加Become语句 96
+更新apt缓存  97
+使用Git获取项目源码  98
+将Mezzanine和其他软件包安装到virtualenv中  100
+任务中的复杂参数：稍微跑个题  103
+配置数据库  106
+从模板生成local_settingspy文件  107
+运行django-manage命令  110
+在应用环境中运行定制的Python脚本 111
+设置服务配置文件  114
+启用Nginx配置文件  117
+安装TLS证书  117
+安装Twitter计划任务 119 
+playbook全文  119
+在Vagrant虚拟机上运行playbook  123
+故障排查  124
+无法拉取Git仓库代码  124 
+192.168.33.10.xip.io地址不可达  124
+错误的请求（400）  125
+将Mezzanine部署到多台主机  125
+
+第7章　role：扩展你的playbook126 
+role的基本构成  126
+范例： database和 mezzanine role  127
+在你的playbook中使用 role  127 
+pre-tasks和 post-tasks  129
+用于部署数据库的database role  130
+用于部署Mezzanine的mezzanine role  132
+使用ansible-galaxy创建 role文件与目录  137
+从属role  138 
+Ansible Galaxy 139 
+Web界面  139
+命令行工具 139
+将你自己的role发布到Galaxy 140
+
+第8章　复杂的playbook 141
+处理不良行为的命令：changed_when和failed_when  141
+过滤器  145
+默认过滤器 145
+用于注册变量的过滤器  145
+应用于文件路径的过滤器  146
+编写你自己的过滤器  147 
+lookup  148 
+file  149 
+pipe 150 
+env  150 
+password 150 
+template  151 
+csvfile  151 
+dnstxt  152 
+redis_kv  153 
+etcd  154
+编写你自己的lookup插件  155
+更复杂的循环  155 
+with_lines  156 
+with_fileglob  156 
+with_dict  157
+将循环结构用作lookup插件  158
+循环控制  158
+设置变量名称  158
+为输出增加标签  160
+include  161
+动态引用  162 
+role include  162 
+block  164
+利用block进行异常处理  164
+使用Vault加密敏感数据  168
+
+第9章　自定义host、run和handler 170
+通过模式匹配指定主机 170
+限制运行的主机  171
+在控制主机上运行task  171
+在涉及的主机以外的机器上运行task  172
+逐台主机运行  173
+一次运行一批主机  174
+只执行一次  175
+运行策略  175 
+linear策略  176 
+free策略  177
+高级handler 179 
+Pre和Post task中的handler  179 
+flush handler  180 
+handlers listen  182
+手动采集fact  188
+从主机获取IP地址  189
+
+第10章　回调插件 191 
+stdout插件  191 
+actionable 插件  192 
+debug插件  192 
+dense插件  193 
+json插件  193 
+minimal插件  194 
+oneline插件  195 
+selective 插件  195 
+skippy插件 195
+其他插件  195 
+foreman插件  196 
+hipchat插件  196 
+jabber插件  197 
+junit插件  197 
+log_plays插件  198 
+logentries插件 198 
+logstash插件  198 
+mail插件  199 
+osx_say插件  199 
+profile_tasks插件  199 
+slack插件  200 
+timer插件  200
+
+第11章　让Ansible快到飞起201 
+SSH多路复用以及长连接保持  201
+手动启动SSH多路复用  202 
+Ansible中的SSH多路复用配置 203
+流水线  205
+启用流水线 205
+将主机配置为支持流水线  205 
+fact缓存 207 
+JSON文件作为fact缓存后端  208 
+Redis作为fact缓存后端  209 
+Memcached作为fact缓存后端  209
+并行  210
+异步执行并发任务  211
+
+第12章　自定制模块213
+范例：检测远程服务器是否可达  213
+使用script模块而不是自己写模块  213
+实现can_reach模块 214
+在哪里放置自定制模块 214 
+Ansible如何调用模块  215
+用参数生成一个独立的Python脚本（只限于Python模块）  215
+将模块复制到服务器  215
+在服务器上创建一个参数文件（只限于非Python模块）  215
+调用模块  216
+期望输出  216 
+Ansible的输出变量  217
+用Python实现模块  217
+解析参数  219
+获取参数的值  220
+导入AnsibleModule辅助类  220
+参数选项  221 
+AnsibleModule的初始化参数  223
+返回成功或失败  227
+调用外部命令  227
+检查模式 (演习模式 )  229
+文档化你的模块  230
+调试模块  231
+使用Bash实现模块  233
+指定Bash的解释器路径 234
+示例模块  235
+
+第13章　Vagrant  236 
+Vagrant的便捷配置选项  236
+端口转发和私有IP地址  236 
+代理转发  238 
+Ansible置备器  238
+置备器何时运行  239
+由Vagrant生成inventory  239
+并行配置  240
+指定群组  241 
+Ansible本地置备器  242
+
+第14章　Amazon.EC2 244
+术语  246
+实例  246 
+Amazon系统镜像  246
+标签  247
+指定认证凭据  247
+环境变量  248
+配置文件  248
+必要条件： Boto Python 库  249
+动态inventory 249 
+inventory缓存  251
+其他配置项 252
+自动生成群组  252
+使用标签定义动态群组 253
+把标签应用到现有资源  253
+更好听的群组名  254 
+EC2 Virtual Private Cloud和 EC2 Classic  255
+配置ansible.cfg 支持使用 EC2  256
+启动新的实例  256 
+EC2密钥对  258
+创建新的密钥  258
+上传已有密钥  260
+安全组  260
+允许的IP地址  261
+安全组端口 262
+获取最新的AMI  262 
+向群组中添加一个新的实例  264
+等待服务器启动  266
+创建实例的幂等性方法 267
+全部加在一起  267
+指定Virtual Private Cloud 270
+动态inventory和VPC  274
+构建AMI  274
+使用ec2_ami模块  274
+使用Packer  275
+其他模块  279
+
+第15章　Docker  280 
+Docker与Ansible配合案例  281 
+Docker应用的生命周期  282
+样例应用：Ghost  283
+连接到Docker Daemon 283
+在本地机器上运行容器 283
+从Dockerfile 构建镜像  284
+在本机上对多个容器进行编排  286
+推送镜像到Docker registry  287
+查询本地镜像  289
+部署Docker化的应用  291
+后端：Postgres  291
+前端  292
+前端：Ghost  293
+前端：Nginx  293
+清除容器  294
+直连容器  294 
+Ansible Container  296 
+Conductor  296
+创建Docker镜像  297
+本地运行  301
+发布镜像到registry  302
+将容器部署到生产环境  303 
+
+第16章　调试Ansible.playbook 304
+人类可读的错误信息  304
+调试SSH问题  305 
+debug模块  307 
+playbook调试器  307 
+assert模块  309
+在执行前检查你的playbook  311
+语法检查  311
+列出host  311
+列出task  312
+检测模式  312
+显示文件变化  313
+限制指定的task运行  313 
+step  313 
+start-at-task  314 
+tags  314
+
+第17章　管理Windows主机  316
+连接到Windows  316 
+PowerShell  317 
+Windows模块  320
+第一个playbook  320
+升级Windows  321
+添加本地用户  323
+结论  326
+
+第18章　使用 Ansible管理网络设备327
+网络模块现状  327
+所支持的网络供应商列表  328
+网络设备的准备工作  328
+支持SSH身份验证  329
+模块如何工作  331
+我们的第一个playbook  332
+网络模块中的inventory和变量 333 
+本地连接  335
+连接配置  335
+身份验证变量  336
+保存配置  336
+使用文件中的配置  338
+模板，模板，模板  341
+收集fact  344
+结论  345
+
+第19章　Ansible.Tower：Ansible企业版346
+订阅模式  347
+试用 Ansible Tower  347 
+Ansible Tower能解决什么问题  348
+访问控制  348
+项目管理  349 
+inventory管理  350
+按作业模板运行作业  351 
+RESTful API  354 
+Ansible Tower的命令行  354
+安装  355
+创建用户  355
+运行作业  357
+以终为始  358
+
+附录A　SSH  359
+附录B　在 EC2认证中使用IAM.role  369
+术语表  373
+参考文献  379
