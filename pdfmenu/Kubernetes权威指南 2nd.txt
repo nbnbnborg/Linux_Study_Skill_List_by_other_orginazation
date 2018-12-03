@@ -1,0 +1,149 @@
+第1章 Kubernetes 入门 1
+1.1 Kubernetes 是什么 1
+1.2 为什么要用Kubernetes 4
+1.3 从一个简单的例子开始 5
+1.3.1 环境准备 6
+1.3.2 启动MySQL 服务 7
+1.3.3 启动Tomcat 应用 9
+1.3.4 通过浏览器访问网页 11
+1.4 Kubernetes 基本概念和术语 12
+1.4.1 Master 12
+1.4.2 Node 13
+1.4.3 Pod 15
+1.4.4 Label（标签） 19
+1.4.5 Replication Controller（RC） 22
+1.4.6 Deployment 25
+1.4.7 Horizontal Pod Autoscaler（HPA） 27
+1.4.8 Service（服务） 29
+1.4.9 Volume（存储卷） 35
+1.4.10 Persistent Volume 39
+1.4.11 Namespace（命名空间） 40
+1.4.12 Annotation（注解） 42
+1.4.13 小结 42
+第2章 Kubernetes 实践指南 43
+2.1 Kubernetes 安装与配置 43
+2.1.1 安装Kubernetes 43
+2.1.2 配置和启动Kubernetes 服务 45
+2.1.3 Kubernetes 集群的安全设置 51
+2.1.4 Kubernetes 的版本升级 57
+2.1.5 内网中的Kubernetes 相关配置 57
+2.1.6 Kubernetes 核心服务配置详解 58
+2.1.7 Kubernetes 集群网络配置方案 72
+2.2 kubectl 命令行工具用法详解 80
+2.2.1 kubectl 用法概述 80
+2.2.2 kubectl 子命令详解 82
+2.2.3 kubectl 参数列表 84
+2.2.4 kubectl 输出格式 84
+2.2.5 kubectl 操作示例 86
+2.3 Guestbook 示例：Hello World 87
+2.3.1 创建redis-master RC 和Service 89
+2.3.2 创建redis-slave RC 和Service 91
+2.3.3 创建frontend RC 和Service 93
+2.3.4 通过浏览器访问frontend 页面 96
+2.4 深入掌握Pod 97
+2.4.1 Pod 定义详解 97
+2.4.2 Pod 的基本用法 102
+2.4.3 静态Pod 107
+2.4.4 Pod 容器共享Volume 108
+2.4.5 Pod 的配置管理 110
+2.4.6 Pod 生命周期和重启策略 123
+2.4.7 Pod 健康检查 124
+2.4.8 玩转Pod 调度 126
+2.4.9 Pod 的扩容和缩容 135
+2.4.10 Pod 的滚动升级 139
+2.5 深入掌握Service 143
+2.5.1 Service 定义详解 143
+2.5.2 Service 基本用法 145
+2.5.3 集群外部访问Pod 或Service 150
+2.5.4 DNS 服务搭建指南 153
+2.5.5 Ingress：HTTP 7 层路由机制 161
+第3章 Kubernetes 核心原理 165
+3.1 Kubernetes API Server 原理分析 165
+3.1.1 Kubernetes API Server 概述 165
+3.1.2 独特的Kubernetes Proxy API 接口 168
+3.1.3 集群功能模块之间的通信 169
+3.2 Controller Manager 原理分析 170
+3.2.1 Replication Controller 171
+3.2.2 Node Controller 173
+3.2.3 ResourceQuota Controller 174
+3.2.4 Namespace Controller 176
+3.2.5 Service Controller 与Endpoint Controller 176
+3.3 Scheduler 原理分析 177
+3.4 kubelet 运行机制分析 181
+3.4.1 节点管理 181
+3.4.2 Pod 管理 182
+3.4.3 容器健康检查 183
+3.4.4 cAdvisor 资源监控 184
+3.5 kube-proxy 运行机制分析 186
+3.6 深入分析集群安全机制 190
+3.6.1 API Server 认证 190
+3.6.2 API Server 授权 192
+3.6.3 Admission Control 准入控制 194
+3.6.4 Service Account 195
+3.6.5 Secret 私密凭据 200
+3.7 网络原理 203
+3.7.1 Kubernetes 网络模型 203
+3.7.2 Docker 的网络基础 205
+3.7.3 Docker 的网络实现 217
+3.7.4 Kubernetes 的网络实现 225
+3.7.5 开源的网络组件 229
+3.7.6 网络实战 234
+第4章 Kubernetes 开发指南 247
+4.1 REST 简述 247
+4.2 Kubernetes API 详解 249
+4.2.1 Kubernetes API 概述 249
+4.2.2 API 版本 254
+4.2.3 API 详细说明 254
+4.2.4 API 响应说明 256
+4.3 使用Java 程序访问Kubernetes API 258
+4.3.1 Jersey 258
+4.3.2 Fabric8 270
+4.3.3 使用说明 271
+第5章 Kubernetes 运维指南 292
+5.1 Kubernetes 集群管理指南 292
+5.1.1 Node 的管理 292
+5.1.2 更新资源对象的Label 294
+5.1.3 Namespace：集群环境共享与隔离 295
+5.1.4 Kubernetes 资源管理 299
+5.1.5 Kubernetes 集群高可用部署方案 333
+5.1.6 Kubernetes 集群监控 343
+5.1.7 kubelet 的垃圾回收（GC）机制 361
+5.2 Kubernetes 高级案例 362
+5.2.1 ElasticSearch 日志搜集查询和展现案例 362
+5.2.2 Cassandra 集群部署案例 371
+5.3 Trouble Shooting 指导 376
+5.3.1 查看系统Event 事件 377
+5.3.2 查看容器日志 379
+5.3.3 查看Kubernetes 服务日志 379
+5.3.4 常见问题 381
+5.3.5 寻求帮助 384
+5.4 Kubernetes v1.3 开发中的新功能 385
+5.4.1 Pet Set（有状态的容器） 385
+5.4.2 Init Container（初始化容器） 388
+5.4.3 Cluster Federation（集群联邦） 391
+第6章 Kubernetes 源码导读 396
+6.1 Kubernetes 源码结构和编译步骤 396
+6.2 kube-apiserver 进程源码分析 400
+6.2.1 进程启动过程 400
+6.2.2 关键代码分析 402
+6.2.3 设计总结 417
+6.3 kube-controller-manager 进程源码分析 420
+6.3.1 进程启动过程 420
+6.3.2 关键代码分析 423
+6.3.3 设计总结 431
+6.4 kube-scheduler 进程源码分析 433
+6.4.1 进程启动过程 434
+6.4.2 关键代码分析 438
+6.4.3 设计总结 445
+6.5 kubelet 进程源码分析 447
+6.5.1 进程启动过程 447
+6.5.2 关键代码分析 452
+6.5.3 设计总结 475
+6.6 kube-proxy 进程源码分析 476
+6.6.1 进程启动过程 476
+6.6.2 关键代码分析 478
+6.6.3 设计总结 493
+6.7 kubectl 进程源码分析 494
+6.7.1 kubectl create 命令 495
+6.7.2 rolling-update 命令 499
+后记 505
