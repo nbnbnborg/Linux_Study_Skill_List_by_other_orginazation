@@ -1,0 +1,262 @@
+第1章 自动化运维和监控系统 2
+1.1 互联网公司的运维工作 2
+1.2 何谓自动化运维 3
+1.3 监控系统在运维自动化中的角色5
+1.4 监控系统的理想化模样5
+第2章 Zabbix简介 7
+2.1 Zabbix发展现状 7
+2.2 选择Zabbix的理由 8
+2.3 Zabbix部分名词约定 9
+第3章 Zabbix安装 11
+3.1 获取Zabbix 11
+3.2 Zabbix Server安装 12
+3.2.1 Zabbix数据库配置 12
+3.2.2 安装Zabbix Server 13
+3.2.3 安装Zabbix Web前端 16
+3.3 Zabbix Agent安装18
+3.3.1 UNIX/Linux上安装Zabbix Agent 18
+3.3.2 Windows上安装Zabbix Agent 18
+3.4 测试Zabbix Agent和Zabbix Server运行 20
+3.5 配置文件详解20
+3.5.1 zabbix_server.conf 20
+3.5.2 zabbix_agentd.conf 24
+第4章 监控第一台Host 26
+4.1 Host在监控系统中的活动 26
+4.2 添加一个用户27
+4.3 把服务器加入Zabbix监控 27
+4.4 添加Item28
+4.5 添加Trigger29
+4.6 设置Action31
+4.7 收到第一封报警邮件33
+4.8 Zabbix 报警流程33
+4.9 看，Zabbix在工作呢34
+4.9.1 全局搜索框35
+4.9.2 查看监控数据35
+4.9.3 查看报警信息36
+4.10 添加自定义监控点 37
+第二部分 配置篇
+第5章 增加监控 40
+5.1 Host配置 41
+5.2 Item属性 45
+5.3 Item类型 48
+5.3.1 Zabbix Agent类型 48
+5.3.2 SNMP类型 51
+5.3.3 IPMI类型 52
+5.3.4 日志文件监控 53
+5.3.5 计算型Item 54
+5.3.6 Zabbix内部监控 55
+5.3.7 ssh类型Item 58
+5.3.8 Telnet类型Item 60
+5.3.9 External Check类型Item 60
+5.3.10 Aggregate类型Item 60
+5.3.11 Trapper类型Item 62
+5.3.12 JMX类型Item 62
+5.3.13 ODBC类型Item 64
+5.4 Item历史数据History和Trends66
+5.5 使用Application对Item分组67
+5.6 Item Key详解68
+5.7 Template模板69
+5.7.1 新建和配置一个Template 69
+5.7.2 建立/取消Host和Template的关联 71
+5.7.3 修改Template 73
+5.7.4 Template和Host 73
+5.7.5 Template之间的父子关系 74
+5.8 Clone、Full Clone和Mass Update 75
+5.9 Windows监控 76
+5.10 VMware监控 82
+5.11 Zabbix监控性能84
+第6章 报警配置 86
+6.1 Triggers86
+6.1.1 配置Triggers 86
+6.1.2 Trigger expression 87
+6.1.3 Function详解 89
+6.1.4 Trigger依赖 92
+6.1.5 Trigger等级 94
+6.1.6 单位 95
+6.2 Events 95
+6.3 Actions 96
+6.3.1 Action 97
+6.3.2 Operation 99
+6.3.3 Condition 104
+6.3.4 Escalations 107
+6.3.5 Unsupported状态的Items的报警 110
+6.4 Media类型 111
+6.5 Maintenance状态 116
+第7章 数据可视化 118
+7.1 Graph 118
+7.2 Network Maps 123
+7.2.1 新建Maps 123
+7.2.2 创建元素 124
+7.2.3 选择元素 126
+7.2.4 关联元素 126
+7.2.5 关联指示器 126
+7.3 Screens 127
+7.4 Slide shows 131
+第8章 Users和Macros 133
+8.1 User和User group 133
+8.1.1 配置User 133
+8.1.2 User group 135
+8.2 Macros 136
+8.2.1 自带宏 136
+8.2.2 用户自定义宏 137
+8.2.3 自定义宏的适用范围 139
+第9章 IT services服务监控与Web monitoring网络监控 140
+9.1 Services服务监控 140
+9.2 服务配置 141
+9.3 Web monitoring网络监控配置 145
+9.4 监控百度示例 148
+第10章 Zabbix前端界面 151
+10.1 Monitoring板块 151
+10.1.1 Dashboard栏目 151
+10.1.2 Overview栏目 157
+10.1.3 Web栏目 158
+10.1.4 Latest data栏目 159
+10.1.5 Triggers栏目 159
+10.1.6 Events栏目 160
+10.1.7 Graphs&Screens&Maps栏目 161
+10.2 Inventory板块 161
+10.3 Reports板块 161
+10.4 Configuration板块 166
+10.4.1 Host groups栏目 166
+10.4.2 Template栏目 167
+10.4.3 Hosts栏目 168
+10.4.4 Maintenance栏目 170
+10.4.5 其他 170
+10.5 Administration板块 171
+10.5.1 General栏目 171
+10.5.2 DM栏目 177
+10.5.3 Authentication栏目 178
+10.5.4 Users栏目 179
+10.5.5 Media types栏目 181
+10.5.6 Scripts栏目 181
+10.5.7 Audit栏目 185
+10.5.8 Queue栏目 186
+10.5.9 Notification栏目 186
+10.5.10 Installation栏目 187
+10.6 前端配置 187
+10.6.1 全局配置参数 187
+10.6.2 前端维护状态显示 189
+10.6.3 Profile设置 190
+10.7 全局搜索框 192
+第11章 Discovery 193
+11.1 基于网络的Discovery 193
+11.2 Discovery的一个例子 195
+11.3 Discovery Rule和Discovery Action的配置 196
+11.4 存活Agent自动加入监控 199
+11.5 low-level discovery 200
+第三部分 进阶篇
+第12章 Zabbix API 206
+12.1 Zabbix API POST参数 206
+12.2 Item支持的Zabbix API方法 207
+12.2.1 Item object 208
+12.2.2 item.create 209
+12.2.3 item.delete 210
+12.2.4 item.exists 210
+12.2.5 item.get 211
+12.2.6 item.getobjects 214
+12.2.7 item.isreadable/item.iswritable 215
+12.2.8 item.update 215
+12.3 如何阅读Zabbix API文档 216
+第13章 Zabbix分布式监控 217
+13.1 两种分布式架构对比 217
+13.2 Proxy单级分布式架构 218
+13.3 Proxy配置 219
+13.4 Node多级分布式架构 220
+第14章 Zabbix系统优化 227
+14.1 Zabbix内部运行机制 227
+14.2 Items过多造成性能下降 228
+14.3 数据库及其他调优 232
+第15章 轻量级日志监控应用 233
+15.1 准备工作 233
+15.2 添加 Item 234
+15.3 测试 234
+15.4 配置报警 236
+15.5 轮转的日志文件 237
+15.6 获取关键字 238
+第四部分 设计篇
+第16章 Zabbix数据库表结构解析 240
+16.1 表结构概述 240
+16.2 Hosts表 241
+16.3 Items表 244
+16.4 Trigger在数据库中的结构 248
+16.5 Events表 253
+16.6 Triggers和Events生成的规则 255
+第17章 History和Trends 256
+17.1 sync字段的含义 257
+17.2 history和trends的区别 261
+17.3 housekeeper和trends表 262
+17.4 Graph对于history和trends的选择 263
+第18章 Zabbix和数据库交互详解 268
+18.1 include/zbxdb.h 268
+18.2 zbxdb/db.c 270
+18.3 zbxdbhigh 271
+第19章 Zabbix 2.2新功能介绍 274
+19.1 数据库自动升级 274
+19.1.1 检查数据库版本 274
+19.1.2 mandatory和optional字段 275
+19.1.3 数据库升级过程 277
+19.1.4 前端提示 278
+19.2 Web监控 279
+19.2.1 Web监控Template化 279
+19.2.2 Web监控重试机制 279
+19.2.3 使用HTTP代理 280
+19.2.4 URL监控中使用页面内容作为变量 281
+19.3 数据映射 282
+19.4 history和trends存储的代码分析 282
+19.4.1 DCsync_history 283
+19.4.2 DCsync_trends 285
+19.4.3 整个流程 285
+19.5 网页字符串匹配 286
+19.6 日志文件监控 287
+19.7 Latest Data局部刷新 288
+19.8 动态载入模块 288
+19.9 SNMP监控改进 292
+19.9.1 SNMPv3相关的增强 292
+19.8.2 SNMP重试和超时机制改进 293
+19.9.3 lld的复杂OIDs 293
+第20章 Zabbix内置监控项实现 294
+20.1 system.hostname 294
+20.2 system.cpu.load 295
+第五部分 社区和开源
+第21章 典型案例分析 300
+21.1 前端显示Zabbix server停止工作问题 300
+21.2 Item设置了但没有数据 306
+21.2.1 看页面是否有报错 306
+21.2.2 Zabbix Server和Zabbix Agent的网络是否互通 307
+21.2.3 zabbix_get是否能够获取到数据 308
+21.2.4 总结 308
+21.3 一个扫描history全表的SQL问题 309
+21.4 解决问题的思路 319
+第22章 Zabbix代码问题和解决 320
+22.1 Duplicated Host问题 320
+22.2 拼接大SQL问题 322
+22.3 nextid问题 323
+22.4 在Zabbix中打印日志 325
+第23章 PPTV的Zabbix监控体系 326
+23.1 Python Zabbix API 326
+23.2 Spider——服务器添加Zabbix监控 328
+23.3 Event Console 330
+23.4 Rule Engine 330
+23.5 报警系统架构 331
+第24章 Zatree 332
+24.1 使用Zatree 332
+24.2 Zabbix二次开发和重新开发监控系统的选择 334
+第25章 Zabbix第三方插件 337
+25.1 Chromix 337
+25.2 Zabbix Notifier 338
+25.3 手机端Zabbix App 339
+25.3.1 ZBX Mobile 339
+25.3.2 Zabbkit 341
+第26章 微信公众平台报警 344
+26.1 申请微信公众平台账号 344
+26.2 配置微信公众平台账号 345
+26.2.1 使用SAE进行测试开发 347
+26.2.2 申请测试账号 348
+26.2.3 获取access_token 348
+26.2.4 获取用户的openid 349
+26.2.5 发送第一条文字消息 349
+26.3 微信接口请求次数限制 350
+第27章 社区论坛 351
+附录 Zabbix自带宏 353
+后记 355
+程序员职业生涯的一些感悟 356
