@@ -67,8 +67,26 @@
 # 自己动手写Docker 2017.7Published
 ## unget
 
+# SaltStack技术入门与实践 2015.11.5Published
+## unget
+
+# SaltStack运维实战 2016.5Published
+## unget
+
+# Splunk智能运维实战 2015.10Published
+## unget
+
+# ELKStack权威指南 2015.10Published
+## unget
+
+# ELKStack权威指南 2nd 2017.5Published
+## unget
+
 # 自动化运维软件设计实战 2015.7Published
 ## Ansible;SaltStack;Puppet;ActiveMQ;Karaf;Maven;Zabbix 2.2.0rc2
 
 # 大规模Linux集群架构最佳实践：如何管理上千台服务器 2017.8Published
 ## CentOS 6.6 64;AIDE 0.14;openLDAP;bind 9.8.2;Bacula;Graphite;PXE;Cobbler;Puppet 3.8.*;Splunk 6.2.3;ELK:Logstash 1.4.2+Elasticsearch 1.5.2+Kibana 4.0.2
+
+# 微服务运维实战 第一卷.txt	2018.6Published
+## unget
