@@ -1,0 +1,20 @@
+Jenkins入门总结   3
+Jenkins 安装  4
+Jenkins 构建JavaHelloWorld  7
+Jenkins的配置  13
+Jenkins的Windows Slave的配置  16
+Jenkins的Linux的Slave的配置  23
+Jenkins Master/Slave架构  26
+Jenkins最佳实践  29
+Jenkins中执行batch和Python  30
+Jenkins的授权和访问控制  32
+Jenkins插件之Perforce访问  37
+Jenkins插件之trigger  43
+Jenkins插件之构建与MSBuild  44
+Jenkins插件之环境变量插件EnvInject  47
+Jenkins插件之Workspace cleanup + Copy to slave  51
+Jenkins插件之VShpere Cloud  53
+Jenkins插件之Publish Over SSH/CIFS/FTP   55
+Jenkins插件之Deploy  57
+Jenkins插件之Dashboard和wall display  60
+Jenkins插件之有用  62
