@@ -1,5 +1,5 @@
 # Ansible快速入门：技术原理与实战 2017.6Published
-## 
+## Unknown
 
 # Ansible自动化运维：技术与佳实践 2016.5Published
 ## Ansible 1.9.2
@@ -40,8 +40,32 @@
 # 奔跑吧ansible 1st 2016.1Published
 ## Ansible 1.8.4
 
+# Docker源码分析 2015.8Published
+## Docker 1.2.0
+
+# Docker——容器与容器云 2015.9Published
+## unget
+
+# Docker——容器与容器云 2nd 2016.10Published
+## unget
+
 # 第一本Docker书 2014ver 2014.12Published
 ## Docker 1.3.0左右
+
+# 第一本Docker书 修订版 2016.4Published
+## Docker 1.9.0+
+
+# Docker技术入门与实战 1st 2015.1Published
+## unget
+
+# Docker技术入门与实战 2nd 2017.3Published
+## unget
+
+# Docker技术入门与实战 3rd 2018.9.14Published
+## unget
+
+# 自己动手写Docker 2017.7Published
+## unget
 
 # 自动化运维软件设计实战 2015.7Published
 ## Ansible;SaltStack;Puppet;ActiveMQ;Karaf;Maven;Zabbix 2.2.0rc2
