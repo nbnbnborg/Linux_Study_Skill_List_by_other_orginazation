@@ -1,0 +1,169 @@
+序言
+前言
+第1章 SaltStack入门 1
+1.1 SaltStack服务架构 2
+1.2 SaltStack架构安装 2
+1.2.1 SaltStack软件依赖 3
+1.2.2 yum方式安装（采用EPEL源） 4
+1.2.3 pip方式安装 4
+1.2.4 源码安装 4
+1.2.5 salt-bootstrap安装 5
+1.3 开始SaltStck之旅 6
+1.3.1 证书管理 6
+1.3.2 日常命令参数 7
+1.4 熟悉SalStack配置文件 10
+1.4.1 Master配置文件 10
+1.4.2 Minion配置文件 14
+第2章 SaltStack组件 17
+2.1 从管理对象说起 17
+2.2 管理对象属性 20
+2.2.1 通过Minion配置文件定义Grains 21
+2.2.2 通过Grains模块定义Grains 22
+2.3 数据管理中心 23
+2.4 针对管理对象操作 25
+2.5 配置管理从这里开始 27
+2.6 执行结果处理 31
+2.7 Job管理 33
+2.8 Event和Reactor系统 37
+2.9 Renderer组件 40
+2.10 其他组件 43
+2.10.1 Mine 43
+2.10.2 Peer 44
+第3章 SaltStack实践案例 49
+3.1 环境规划 50
+3.1.1 实验环境设置 51
+3.1.2 SaltStack环境设置 51
+3.2 YAML编写技巧 52
+3.2.1 什么是YAML 52
+3.2.2 规则一：缩进 52
+3.2.3 规则二：冒号 52
+3.2.4 规则三：短横杠 53
+3.3 Jinja使用技巧 54
+3.3.1 什么是Jinja 54
+3.3.2 如何区分模板文件 54
+3.3.3 Jinja基本使用 55
+3.3.4 Jinja逻辑关系 55
+3.4 系统初始化 56
+3.4.1 DNS配置 56
+3.4.2 History记录时间 56
+3.4.3 命令操作审计 57
+3.4.4 内核参数优化 57
+3.4.5 epel仓库 58
+3.4.6 Zabbix Agent安装 58
+3.4.7 初始化环境引用 60
+3.5 Haproxy配置管理 61
+3.5.1 pkg配置 62
+3.5.2 Haproxy服务配置 62
+3.5.3 编写Haproxy安装SLS 63
+3.5.4 Haproxy业务引用 65
+3.5.5 执行Haproxy状态 67
+3.5.6 查看Haproxy状态 67
+3.6 Keepalived配置管理 68
+3.6.1 软件包准备 68
+3.6.2 编写Keepalived安装SLS 69
+3.6.3 Keepalived业务引用 70
+3.6.4 执行Keepalived状态 72
+3.6.5 Haproxy+Keepalived测试 73
+3.7 Memcached配置管理 74
+3.7.1 www用户配置 75
+3.7.2 Libevent配置 76
+3.7.3 Memcached配置 76
+3.7.4 Memcached服务 77
+3.7.5 执行Memcached状态 78
+3.8 Nginx配置管理 78
+3.8.1 PCRE模块 79
+3.8.2 Nginx模块 80
+3.8.3 Nginx配置文件 81
+3.8.4 编写Nginx服务SLS 82
+3.8.5 PHP（FastCGI）配置管理 83
+3.8.6 PHP Redis模块 86
+3.8.7 PHP Memcached模块 86
+3.9 业务引用模块 87
+3.9.1 BBS论坛案例 88
+3.9.2 修改top.sls 89
+3.9.3 执行状态 89
+3.9.4 案例扩展的思路 92
+第4章 扩展SaltStack组件 93
+4.1 扩展Grains 93
+4.1.1 理解扩展Grains流程 94
+4.1.2 扩展Grains案例 96
+4.2 扩展Module 96
+4.2.1 理解扩展Module原理 97
+4.2.2 扩展Module案例 99
+4.3 扩展state 102
+4.3.1 理解扩展state原理 102
+4.3.2 扩展state案例 104
+4.4 ext_pillar与ext_nodes 108
+4.4.1 理解ext_pillar 流程 108
+4.4.2 理解 ext_nodes流程和案例 110
+4.4.3 ext_pillar实际案例 115
+4.4.4 扩展ext_pillar 119
+4.5 SaltStack git文件服务器 120
+第5章 第三方调用SaltStack 127
+5.1 通过Python API调用 127
+5.1.1 Python API工作原理 128
+5.1.2 Python API 介绍 133
+5.2 通过RESTful API调用 138
+5.2.1 Restful API配置环境部署 139
+5.2.2 通过 Restful API实现日常操作 141
+第6章 SaltStack架构扩展 145
+6.1 无Master架构 145
+6.1.1 设置无Master运行 146
+6.1.2 关闭salt-minion 146
+6.1.3 使用salt-call执行状态 146
+6.2 多Master架构 147
+6.2.1 配置多Master 147
+6.2.2 Master数据存储 147
+6.2.3 设置Minion 148
+6.3 Salt Syndic 149
+6.3.1 Syndic配置 149
+6.3.2 高级Master配置 150
+6.3.3 Syndic测试 150
+6.3.4 Syndic是如何工作的 151
+6.3.5 Syndic的优缺点 151
+6.4 Salt SSH 152
+6.4.1 Salt Rosters 153
+6.4.2 使用Salt SSH 154
+6.4.3 基本使用 154
+6.4.4 生产实践 155
+第7章 SaltStack Web平台开发 161
+7.1 SaltStck Web平台开发流程 161
+7.1.1 确定技术栈 162
+7.1.2 做原型图 163
+7.1.3 UI设计 166
+7.2 与SaltStack联动 166
+7.3 实践 168
+7.3.1 框架搭建 168
+7.3.2 功能开发 170
+7.3.3 效果演示 174
+第8章 Hack SaltStack 177
+8.1 实现命令执行结果的自动采集与监控 177
+8.1.1 MySQL建表 178
+8.1.2 自定义returner 179
+8.1.3 通过fluent采集数据 180
+8.1.4 结果查询 182
+8.2 实现系统信息变更的自动上报 182
+8.2.1 上报系统的需求与结构 183
+8.2.2 软件选型 183
+8.2.3 系统构建 184
+8.2.4 基于Event的扩展 188
+第9章 SaltStack排错 193
+9.1 排错思路 193
+9.1.1 确定问题范围 194
+9.1.2 确保环境正常 194
+9.1.3 定位问题 195
+9.1.4 求助 198
+9.1.5 Bug修复 200
+9.2 排错实战 203
+第10章 SaltStack与运维 205
+10.1 SaltStack与自动化运维 205
+10.1.1 运维的工作内容 205
+10.1.2 运维自动化发展历程 207
+10.1.3 运维标准化、工具化 207
+10.1.4 运维Web化、平台化 208
+10.1.5 运维服务化、API化 209
+10.1.6 运维智能化、自动化 210
+10.2 SaltStack与CMDB 210
+10.2.1 信息采集&存储 212
+10.2.2 信息匹配 212
+10.2.3 资产展示 213
