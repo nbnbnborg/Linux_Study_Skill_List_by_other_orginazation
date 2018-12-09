@@ -1,0 +1,630 @@
+├─00-提前准备
+│  │  01-实验环境准备.pdf
+│  │  firebug-2.0.19-fx.xpi
+│  │  Firefox Setup 54.0.exe
+│  │  Firefox Setup 54.0.rar
+│  │  Firefox-full-latest.exe
+│  │  
+│  └─Firefox Setup 54.0
+│          firebug-2.0.19-fx.xpi
+│          Firefox Setup 54.0.exe
+│          
+├─01-单机时代
+│      capture-1.avi
+│      capture-2.avi
+│      capture-3.avi
+│      capture-4.avi
+│      capture-5.avi
+│      作业.txt
+│      
+├─02-集群系统
+│  │  2-跟赵班长学高性能Web架构-集群篇.pdf
+│  │  capture-1.avi
+│  │  capture-10.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  Keepalived权威指南.pdf
+│  │  信息系统灾难恢复规范GBT20988-2007.pdf
+│  │  实验手册-Haproxy+Keepalived集群.docx
+│  │  架构师-day2笔记.docx
+│  │  腾讯云CDN白皮书.pdf
+│  │  计算机的心智操作系统之哲学原理(完全版).pdf
+│  │  
+│  └─Haproxy+Keepalived+Nginx配置
+│          Haproxy+Keepalived+Nginx配置文件.txt
+│          haproxy.cfg
+│          
+├─03-实战dns
+│      capture-1.avi
+│      capture-2.avi
+│      capture-3.avi
+│      capture-4.avi
+│      capture-5.avi
+│      capture-6.avi
+│      实战dns.docx
+│      实战dns2017.docx
+│      新建文本文档 (2).txt
+│      新建文本文档.txt
+│      
+├─04-缓存篇
+│  │  3-跟赵班长学高性能Web架构-缓存篇.pdf
+│  │  capture-1.avi
+│  │  capture-10.avi
+│  │  capture-11.avi
+│  │  capture-12.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  新建文本文档 (2).txt
+│  │  新建文本文档.txt
+│  │  腾讯CDN白皮书.pdf
+│  │  
+│  └─新建文件夹
+│          proxy.conf
+│          upstrem.conf
+│          www.example.com.conf
+│          
+├─05-存储篇
+│      01-P2P软件分发-5.mp4
+│      4-跟赵班长学高性能Web架构-存储篇.pdf
+│      capture-10.avi
+│      capture-2.avi
+│      capture-3.avi
+│      capture-4.avi
+│      capture-6.avi
+│      capture-7.avi
+│      capture-8.avi
+│      capture-9.avi
+│      Http-Traffic-Server.pdf
+│      作业.txt
+│      实验手册-存储篇.docx
+│      
+├─06-SaltStack实战
+│  │  capture-1.avi
+│  │  capture-10.avi
+│  │  capture-11.avi
+│  │  capture-12.avi
+│  │  capture-13.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  
+│  └─tools
+│          01-跟赵班长学自动化运维之-基于SaltStack的配置管理实战-V2.0-【入门实战篇】.pdf
+│          apache-tomcat-8.0.46.tar.gz
+│          httpd (2).conf
+│          httpd.conf
+│          lamp (2).sls
+│          lamp (3).sls
+│          lamp (4).sls
+│          lamp-end.sls
+│          lamp-jinja.sls
+│          lamp.sls
+│          php.ini
+│          tomcat.sls
+│          
+├─07-SaltStack实战
+│  │  capture-1.avi
+│  │  capture-10.avi
+│  │  capture-11.avi
+│  │  capture-12.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  
+│  └─新建文件夹
+│          01-跟赵班长学自动化运维之-基于SaltStack的配置管理实战-V2.0-【入门实战篇】.pdf
+│          2_server_installation_with_mysql_database.pdf
+│          api.conf
+│          auth.conf
+│          master
+│          salt.tar
+│          SaltStack生产使用 (2).txt
+│          SaltStack生产使用.txt
+│          SaltStack生产使用总结.txt
+│          yum-repo.sls
+│          zabbix-agent.sls
+│          zabbix_agentd.conf
+│          第七天作业.jpg
+│          
+├─08-自动化监控Zabbix
+│  │  capture-1.avi
+│  │  capture-10.avi
+│  │  capture-11.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  
+│  └─新建文件夹
+│          zabbix_linux_plugin.sh
+│          zabbix_nginx_plugin.sh
+│          zbx_export_templates.xml
+│          
+├─09-自动化监控Zabbix
+│  │  capture-1.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  
+│  └─新建文件夹
+│      │  Percona-MySQL-Server-Template (2).xml
+│      │  Percona-MySQL-Server-Template.xml
+│      │  QQ图片20171112145020 (2).jpg
+│      │  QQ图片20171112145020.jpg
+│      │  Zabbix3.4.3(lamp) (2).txt
+│      │  Zabbix3.4.3(lamp).txt
+│      │  zabbix_agents_3.0.10.win (2).zip
+│      │  zabbix_agents_3.0.10.win.zip
+│      │  Zabbix架构 (2).png
+│      │  Zabbix架构.png
+│      │  zbx_export_templates (2).xml
+│      │  zbx_export_templates.xml
+│      │  新建文本文档 (2).txt
+│      │  新建文本文档.txt
+│      │  结合CMDB的自动化 (2).png
+│      │  结合CMDB的自动化.png
+│      │  
+│      └─zabbix_agents_3.0.10.win
+│          ├─bin
+│          │  ├─win32
+│          │  │  │  zabbix_agentd (2).exe
+│          │  │  │  zabbix_agentd.exe
+│          │  │  │  zabbix_get (2).exe
+│          │  │  │  zabbix_get.exe
+│          │  │  │  zabbix_sender (2).exe
+│          │  │  │  zabbix_sender.exe
+│          │  │  │  
+│          │  │  └─dev
+│          │  │          zabbix_sender (2).dll
+│          │  │          zabbix_sender (2).lib
+│          │  │          zabbix_sender.dll
+│          │  │          zabbix_sender.lib
+│          │  │          
+│          │  └─win64
+│          │      │  zabbix_agentd (2).exe
+│          │      │  zabbix_agentd.exe
+│          │      │  zabbix_get (2).exe
+│          │      │  zabbix_get.exe
+│          │      │  zabbix_sender (2).exe
+│          │      │  zabbix_sender.exe
+│          │      │  
+│          │      └─dev
+│          │              zabbix_sender (2).dll
+│          │              zabbix_sender (2).lib
+│          │              zabbix_sender.dll
+│          │              zabbix_sender.lib
+│          │              
+│          └─conf
+│                  zabbix_agentd.win (2).conf
+│                  zabbix_agentd.win.conf
+│                  
+├─10-Jenkins持续集成
+│  │  capture-1.avi
+│  │  capture-10.avi
+│  │  capture-11.avi
+│  │  capture-12.avi
+│  │  capture-13.avi
+│  │  capture-14.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  
+│  ├─tools
+│  │      config.xml
+│  │      daemon.json
+│  │      docker-compose
+│  │      gitlab安装.docx
+│  │      jenkins.tar.gz
+│  │      Jenkins培训环境准备.pdf
+│  │      新建文本文档.txt
+│  │      老男孩Jenkins培训.pdf
+│  │      
+│  └─新建文件夹
+│          gitlab-ce.tar
+│          jenkins.tar
+│          sonarqube.tar
+│          
+├─11-Jenkins持续集成
+│  │  capture-1.avi
+│  │  capture-10.avi
+│  │  capture-11.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  
+│  └─新建文件夹
+│          deploy.sh
+│          pipeline案例.txt
+│          老男孩Jenkins培训.pdf
+│          自动化部署设计.txt
+│          
+├─12-ELK日志收集
+│  │  capture-1.avi
+│  │  capture-10.avi
+│  │  capture-11.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  
+│  └─ELK 安装包
+│          apache-tomcat-7.0.69.zip
+│          elasticsearch-5.3.3.rpm
+│          elasticsearch-5.6.5.rpm
+│          elasticsearch-head-docker.tar.gz
+│          elasticsearch-head.tar.gz
+│          ELK 上课内容.docx
+│          ELK 环境准备.txt
+│          filebeat-5.3.3-x86_64.rpm
+│          filebeat-5.6.5-x86_64.rpm
+│          haproxy-1.7.9.tar.gz
+│          jdk-8u151-linux-x64.rpm
+│          jdk-8u151-linux-x64.tar.gz
+│          kibana-5.3.3-x86_64.rpm
+│          kibana-5.6.5-x86_64.rpm
+│          logstash-5.3.3.rpm
+│          logstash-5.6.5.rpm
+│          logstash-input-jdbc-4.2.2.zip
+│          mess.txt
+│          mysql-connector-java-5.1.42.zip
+│          Navicat_V11.0.10_XiTongZhiJia.zip
+│          nginx-1.10.3.tar.gz
+│          redis-3.2.9.tar.gz
+│          
+├─13-ELK日志收集
+│  │  capture-1.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  haproxy.cfg
+│  │  TCP日志.txt
+│  │  
+│  └─kafka-zookeeper
+│          1.png
+│          beats.conf
+│          elasticsearch.yml
+│          ELK 上课内容1217.docx
+│          filebeat.yml
+│          jdk-8u151-windows-x64.exe
+│          kafka-es (2).conf
+│          kafka-es(1).conf
+│          kafka-es【输出至elasticsearch】.conf
+│          kafka_2.11-1.0.0.tgz
+│          kafka安装文档.docx
+│          logstash-output-jdbc-5.3.0-java.gem
+│          nginx-kafka【输入至KAFKA】.conf
+│          Win工具之zookeeper.zip
+│          zbx_export_templates (1).xml
+│          zbx_export_templates.xml
+│          zookeeper-3.4.11.tar.gz
+│          新建文本文档.txt
+│          
+├─14-OpenStack培训
+│  │  capture-1.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  
+│  └─新建文件夹
+│          03-OpenStack培训-云计算概述和KVM虚拟化.ppt
+│          mysql.txt
+│          TightVNC_2.8.2.msi
+│          Xftp-5.0.1233.exe
+│          
+├─15-OpenStack培训
+│  │  capture-1.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  
+│  ├─提前准备
+│  │      03-OpenStack培训-云计算概述和KVM虚拟化.ppt
+│  │      ELK 上课内容.docx
+│  │      mysql.txt
+│  │      TightVNC_2.8.2.msi
+│  │      上课前准备.txt
+│  │      
+│  └─配置文件
+│      │  controller-nova.conf
+│      │  openstack.zip
+│      │  
+│      ├─控制节点
+│      │  │  glance.zip
+│      │  │  keystone.zip
+│      │  │  neutron.zip
+│      │  │  nova.zip
+│      │  │  
+│      │  ├─glance
+│      │  │  │  glance-api.conf
+│      │  │  │  glance-cache.conf
+│      │  │  │  glance-registry.conf
+│      │  │  │  glance-scrubber.conf
+│      │  │  │  glance-swift.conf
+│      │  │  │  policy.json
+│      │  │  │  rootwrap.conf
+│      │  │  │  schema-image.json
+│      │  │  │  
+│      │  │  ├─metadefs
+│      │  │  │      cim-processor-allocation-setting-data.json
+│      │  │  │      cim-resource-allocation-setting-data.json
+│      │  │  │      cim-storage-allocation-setting-data.json
+│      │  │  │      cim-virtual-system-setting-data.json
+│      │  │  │      compute-aggr-disk-filter.json
+│      │  │  │      compute-aggr-iops-filter.json
+│      │  │  │      compute-aggr-num-instances.json
+│      │  │  │      compute-cpu-pinning.json
+│      │  │  │      compute-guest-memory-backing.json
+│      │  │  │      compute-guest-shutdown.json
+│      │  │  │      compute-host-capabilities.json
+│      │  │  │      compute-hypervisor.json
+│      │  │  │      compute-instance-data.json
+│      │  │  │      compute-libvirt-image.json
+│      │  │  │      compute-libvirt.json
+│      │  │  │      compute-quota.json
+│      │  │  │      compute-randomgen.json
+│      │  │  │      compute-trust.json
+│      │  │  │      compute-vcputopology.json
+│      │  │  │      compute-vmware-flavor.json
+│      │  │  │      compute-vmware-quota-flavor.json
+│      │  │  │      compute-vmware.json
+│      │  │  │      compute-watchdog.json
+│      │  │  │      compute-xenapi.json
+│      │  │  │      glance-common-image-props.json
+│      │  │  │      image-signature-verification.json
+│      │  │  │      operating-system.json
+│      │  │  │      software-databases.json
+│      │  │  │      software-runtimes.json
+│      │  │  │      software-webservers.json
+│      │  │  │      storage-volume-type.json
+│      │  │  │      
+│      │  │  └─rootwrap.d
+│      │  │          glance_cinder_store.filters
+│      │  │          os-brick.filters
+│      │  │          
+│      │  ├─keystone
+│      │  │  │  default_catalog.templates
+│      │  │  │  keystone-paste.ini
+│      │  │  │  keystone.conf
+│      │  │  │  logging.conf
+│      │  │  │  policy.json
+│      │  │  │  sso_callback_template.html
+│      │  │  │  
+│      │  │  ├─credential-keys
+│      │  │  │      0
+│      │  │  │      1
+│      │  │  │      
+│      │  │  └─fernet-keys
+│      │  │          0
+│      │  │          1
+│      │  │          
+│      │  ├─neutron
+│      │  │  │  dhcp_agent.ini
+│      │  │  │  l3_agent.ini
+│      │  │  │  metadata_agent.ini
+│      │  │  │  neutron.conf
+│      │  │  │  plugin.ini
+│      │  │  │  policy.json
+│      │  │  │  rootwrap.conf
+│      │  │  │  
+│      │  │  ├─conf.d
+│      │  │  │  │  README
+│      │  │  │  │  
+│      │  │  │  ├─common
+│      │  │  │  ├─neutron-dhcp-agent
+│      │  │  │  ├─neutron-l3-agent
+│      │  │  │  ├─neutron-linuxbridge-agent
+│      │  │  │  ├─neutron-linuxbridge-cleanup
+│      │  │  │  ├─neutron-metadata-agent
+│      │  │  │  ├─neutron-netns-cleanup
+│      │  │  │  ├─neutron-ovs-cleanup
+│      │  │  │  └─neutron-server
+│      │  │  └─plugins
+│      │  │      └─ml2
+│      │  │              linuxbridge_agent.ini
+│      │  │              ml2_conf.ini
+│      │  │              sriov_agent.ini
+│      │  │              
+│      │  └─nova
+│      │          api-paste.ini
+│      │          nova.conf
+│      │          policy.json
+│      │          release
+│      │          rootwrap.conf
+│      │          
+│      └─计算节点
+│          │  neutron.zip
+│          │  nova.zip
+│          │  
+│          └─etc
+│              ├─neutron
+│              │  │  dhcp_agent.ini
+│              │  │  l3_agent.ini
+│              │  │  metadata_agent.ini
+│              │  │  neutron.conf
+│              │  │  policy.json
+│              │  │  rootwrap.conf
+│              │  │  
+│              │  ├─conf.d
+│              │  │  │  README
+│              │  │  │  
+│              │  │  ├─common
+│              │  │  ├─neutron-dhcp-agent
+│              │  │  ├─neutron-l3-agent
+│              │  │  ├─neutron-linuxbridge-agent
+│              │  │  ├─neutron-linuxbridge-cleanup
+│              │  │  ├─neutron-metadata-agent
+│              │  │  ├─neutron-netns-cleanup
+│              │  │  ├─neutron-ovs-cleanup
+│              │  │  └─neutron-server
+│              │  └─plugins
+│              │      └─ml2
+│              │              linuxbridge_agent.ini
+│              │              
+│              └─nova
+│                      api-paste(1).ini
+│                      nova.conf
+│                      policy.json
+│                      release
+│                      rootwrap.conf
+│                      
+├─16-OpenStack培训
+│      1.avi
+│      2.avi
+│      3.avi
+│      capture-4.avi
+│      capture-5.avi
+│      capture-6.avi
+│      local_settings
+│      
+├─17-Docker
+│  │  capture-1.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  capture-8.avi
+│  │  capture-9.avi
+│  │  
+│  └─新建文件夹
+│          cgroup and namespace.md.pdf
+│          daemon.json
+│          docker.zip
+│          Dockerfile
+│          docker讲义-v1.0.pptx
+│          
+├─18-K8S
+│  │  capture-1.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  
+│  └─新建文件夹
+│          Docker编排.pdf
+│          k8s.zip
+│          kubernetes-dashboard.yaml
+│          nginx-deployment.yaml
+│          nginx-service.yaml
+│          
+├─19-HaDoop
+│  │  capture-1.avi
+│  │  capture-2.avi
+│  │  capture-3.avi
+│  │  capture-4.avi
+│  │  capture-5.avi
+│  │  capture-6.avi
+│  │  capture-7.avi
+│  │  
+│  ├─hadoop离线库
+│  │  ├─2.6版本
+│  │  │      ambari-2.6.1.0-centos7.tar.gz
+│  │  │      HDP-2.6.4.0-centos7-rpm.tar.gz
+│  │  │      HDP-GPL-2.6.4.0-centos7-rpm.tar.gz
+│  │  │      HDP-UTILS-1.1.0.22-centos7.tar.gz
+│  │  │      jdk-8u151-linux-x64.rpm
+│  │  │      jdk-8u151-linux-x64.tar.gz
+│  │  │      mysql-5.7.17-linux-glibc2.5-x86_64.tar.gz
+│  │  │      mysql-connector-java-5.1.45.tar.gz
+│  │  │      postgresql-42.2.0.jar
+│  │  │      
+│  │  └─repo文件
+│  │          ambari.repo
+│  │          hdp.repo
+│  │          mysql-community.repo
+│  │          
+│  └─新建文件夹
+│          ambari.repo
+│          CentOS-Base.repo
+│          CentOS-Media.repo
+│          CentOS.repo
+│          centos7离线安装Ambari2.6+HDP2.6.4+ Hadoop集群.docx
+│          hdp.repo
+│          id_rsa
+│          iTop-2.4.0-3585.zip
+│          logstash-6.1.2.rpm
+│          logstash.conf
+│          mysql-connector-java-5.1.45-bin.jar
+│          nginx.conf
+│          周日课前准备.txt
+│          
+└─20-总结
+    │  capture-1.avi
+    │  capture-2.avi
+    │  capture-3.avi
+    │  capture-4.avi
+    │  capture-5.avi
+    │  capture-6.avi
+    │  
+    └─新建文件夹
+            1-ITIL服务战略.pdf
+            2-ITIL服务设计.pdf
+            2018运维工程师职业技能图谱.xlsx
+            3-ITIL服务运营.pdf
+            4-ITIL服务转换.pdf
+            5-ITIL持续服务改进.pdf
+            auto.sh
+            cmdb-demo.xlsx
+            PMBOK第五版官方中文版.pdf
+            华为项目管理10大模板(Word).doc
+            华为项目管理10大模板Excel版.xls
+            自动化扩容.txt
