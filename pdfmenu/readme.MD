@@ -10,6 +10,12 @@
 
 # DevOps软件架构师行动指南 2017.3Published
 
+# Docker全攻略 2016.4Published
+## Docker 1.7.0
+
+# 高性能Docker 2016.9Published
+## Docker 1.10.0
+
 # Docker经典实例 2017.2Published
 ## Ubuntu 14.04:Docker 1.7.1;CentOS6.5:Docker 1.6.2;Winodos8.1:Docker 1.5.0
 
@@ -47,7 +53,7 @@
 ## unget
 
 # Docker——容器与容器云 2nd 2016.10Published
-## unget
+## Docker 1.10;Kubernetes 1.2
 
 # 第一本Docker书 2014ver 2014.12Published
 ## Docker 1.3.0左右
@@ -56,10 +62,10 @@
 ## Docker 1.9.0+
 
 # Docker技术入门与实战 1st 2015.1Published
-## unget
+## Docker 1.3.0
 
 # Docker技术入门与实战 2nd 2017.3Published
-## unget
+## Docker 1.12以上
 
 # Docker技术入门与实战 3rd 2018.9.14Published
 ## unget
