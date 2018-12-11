@@ -71,13 +71,14 @@
 ## unget
 
 # 自己动手写Docker 2017.7Published
-## unget
+## Ubuntu14.04;Go1.7.1
 
 # SaltStack技术入门与实践 2015.11.5Published
-## unget
+## CentOS6.5
 
 # SaltStack运维实战 2016.5Published
-## unget
+## CentOS6.5;
+## Salt2015.5.5+Python2.6.6+Jinja2 2.2.1+M2Crypto0.20.2+pycrypto2.0.1+PyYAML3.10+PyZMQ14.3.1+ZMQ3.2.4+Tornado2.2.1+dateutil1.4.1
 
 # Splunk智能运维实战 2015.10Published
 ## unget
