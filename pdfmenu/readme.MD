@@ -73,6 +73,21 @@
 # 自己动手写Docker 2017.7Published
 ## Ubuntu14.04;Go1.7.1
 
+# OpenStack部署实践 2014.3Published
+## Ubuntu12.04
+
+# OpenStack云计算实战手册 2nd 2014.11Published
+## Ubuntu12.04
+
+# OpenStack从零开始学 2016.11pUBLISHED
+## openSUSE 13.2
+
+# 每天5分钟玩转OpenStack 2017.1Published
+## Ubuntu14.04
+
+# OpenStack实战 2017.5Pubished
+## Ubuntu14.04
+
 # SaltStack技术入门与实践 2015.11.5Published
 ## CentOS6.5
 
