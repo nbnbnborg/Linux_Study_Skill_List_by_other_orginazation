@@ -1,0 +1,134 @@
+第一篇 预备知识
+第1章 虚拟化 2
+1.11型虚拟化 2
+1.22型虚拟化 2
+1.3KVM 3
+1.3.1基本概念 3
+1.3.2KVM实操 4
+1.4KVM 虚拟化原理 11
+1.4.1CPU 虚拟化 11
+1.4.2内存虚拟化 12
+1.4.3存储虚拟化 13
+1.5 网络虚拟化 19
+1.5.1Linux Bridge 19
+1.5.2VLAN 28
+1.5.3Linux Bridge VLAN = 虚拟交换机 35
+第2章 云 计 算 36
+2.1 基本概念 36
+2.2 云计算和OpenStack 38
+第二篇 OpenStack 核心
+第3章 OpenStack 架构 41
+3.1Conceptual Architecture 41
+3.2Logical Architecture 42
+第4章 搭建实验环境 45
+4.1 部署拓扑 45
+4.2 物理资源需求 46
+4.3 网络规划 47
+4.4 部署 DevStack47
+第5章 Identity Service——Keystone 55
+5.1 概念 55
+5.1.1User 55
+5.1.2Credentials 57
+5.1.3Authentication 57
+5.1.4Token 57
+5.1.5Project 58
+5.1.6Service 59
+5.1.7Endpoint 60
+5.1.8Role 60
+5.2 通过例子学习 62
+5.2.1步登录 62
+5.2.2第2步显示操作界面 62
+5.2.3第3步显示image列表 63
+5.2.4Troubleshoot 64
+第6章 Image Service——Glance 65
+6.1 理解 Image 65
+6.2 理解 ImageService 66
+6.3Glance 架构 66
+6.4Glance 操作 69
+6.4.1创建 image 70
+6.4.2删除 image 72
+6.5 如何使用OpenStack CLI 74
+6.6 如何Troubleshooting 77
+第7章 Compute Service——Nova 79
+7.1Nova架构 80
+7.1.1架构概览 80
+7.1.2物理部署方案 82
+7.1.3从虚机创建流程看 nova-* 子服务如何协同工作 84
+7.1.4OpenStack 通用设计思路 85
+7.2Nova 组件详解 88
+7.2.1nova-api 88
+7.2.2nova-scheduler 90
+7.2.3nova-pute 97
+7.2.4nova-conductor 104
+7.3 通过场景学习 Nova105
+7.3.1看懂 OpenStack 日志 105
+7.3.2Launch 108
+7.3.3Shut Off 108
+7.3.4Start 112
+7.3.5Soft/Hard Reboot 114
+7.3.6Lock/Unlock 114
+7.3.7Terminate 115
+7.3.8Pause/Resume 116
+7.3.9Suspend/Resume 118
+7.3.10Rescue/Unrescue 119
+7.3.11Snapshot 122
+7.3.12Rebuild 125
+7.3.13Shelve 128
+7.3.14Unshelve 130
+7.3.15Migrate 133
+7.3.16Resize 139
+7.3.17Live Migrate 144
+7.3.18Evacuate 150
+7.3.19Instance 操作总结 154
+7.4 小节 156
+第8章 Block Storage Service ——Cinder 157
+8.1 理解 BlockStorage 157
+8.2 理解 BlockStorage Service 157
+8.2.1Cinder 架构 158
+8.2.2物理部署方案 159
+8.2.3从volume创建流程看cinder-*子服务如何协同工作 160
+8.2.4Cinder 的设计思想 161
+8.2.5Cinder组件详解 163
+8.2.6通过场景学习 Cinder 170
+8.3 小节 220
+第9章 Networking Service ——Neutron 221
+9.1Neutron 概述 221
+9.1.1Neutron 功能 221
+9.1.2Neutron 网络基本概念 222
+9.2Neutron 架构 224
+9.2.1物理部署方案 227
+9.2.2Neutron Server 228
+9.2.3Neutron 如何支持各种 work provider 229
+9.2.4ML2 Core Plugin 231
+9.2.5Service Plugin / Agent 234
+9.2.6小结 235
+9.3 为Neutron 准备物理基础设施 237
+9.3.11控制节点 1 计算节点的部署方案 237
+9.3.2配置多个网卡区分不同类型的网络数据 238
+9.3.3网络拓扑 239
+9.3.4安装和配置节点 240
+9.4Linux Bridge 实现 Neutron 网络 244
+9.4.1配置 linux-bridge mechanism driver 244
+9.4.2初始网络状态 245
+9.4.3了解Linux Bridge 环境中的各种网络设备 247
+9.4.4local work 248
+9.4.5flat work 262
+9.4.6DHCP 服务 270
+9.4.7vlan work 274
+9.4.8Routing 285
+9.4.9vxlan work 307
+9.4.10Securet Group 321
+9.4.11Firewall as a Service 328
+9.4.12Load Balancing as a Service 337
+9.5Open vSwitch 实现 Neutron 网络 358
+9.5.1网络拓扑 358
+9.5.2配置 openvswitch mechanism driver 359
+9.5.3初始网络状态 360
+9.5.4了解 Open vSwitch 环境中的各种网络设备 362
+9.5.5local work 362
+9.5.6 flat work 377
+9.5.7vlan work 386
+9.5.8Routing 399
+9.5.9vxlan work 411
+9.6 总结 421
+写在后 422
